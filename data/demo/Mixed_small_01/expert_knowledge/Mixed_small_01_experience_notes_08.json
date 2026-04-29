@@ -1,0 +1,18 @@
+{
+  "id": "Mixed_small_01_experience_notes_08",
+  "type": "experience_sharing",
+  "expert_profile": "domain_expert",
+  "timestamp": "2025-08-11T16:07:30.238534",
+  "content": "新手经常以为喷头残留增加直接影响流量计，但实际情况复杂得多。这个因果关系时灵时不灵，要结合具体条件判断。我建议先观察环境参数，再决定是否相信这个关联。",
+  "scenario_context": "热胀冷缩控制",
+  "confidence": 0.9295759937512149,
+  "keywords": [
+    "判断",
+    "因果",
+    "条件",
+    "复杂",
+    "观察"
+  ],
+  "blind_spot_related": "causal_chain_break",
+  "evidence_strength": "HIGH"
+}

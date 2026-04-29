@@ -1,0 +1,19 @@
+{
+  "id": "Mixed_small_01_daily_logs_06",
+  "type": "daily_log",
+  "expert_profile": "domain_expert",
+  "timestamp": "2025-07-19T16:07:30.237534",
+  "content": "今日观察：粉尘浓度传感器显示异常波动（±15%），同时发现3条生产线的合格率从96%降到82%。数据强相关性明显（皮尔逊系数0.83），但系统报告显示粉尘浓度不在任何因果分析中。知识图谱的因果连接严重缺失。",
+  "scenario_context": "热胀冷缩控制",
+  "confidence": 0.7264122904415585,
+  "keywords": [
+    "相关性",
+    "因果",
+    "分析",
+    "波动",
+    "观察",
+    "异常"
+  ],
+  "blind_spot_related": "causal_desert",
+  "evidence_strength": "LOW"
+}

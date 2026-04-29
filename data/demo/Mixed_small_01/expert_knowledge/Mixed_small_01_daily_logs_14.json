@@ -1,0 +1,14 @@
+{
+  "id": "Mixed_small_01_daily_logs_14",
+  "type": "daily_log",
+  "expert_profile": "domain_expert",
+  "timestamp": "2025-06-15T16:07:30.237534",
+  "content": "今天喷头残留增加异常，但流量计反应很微弱，这种'时灵时不灵'的情况又出现了。有时候喷头残留增加变了流量计会跟着动，但经常又没反应，感觉这个传导路径很不稳定。",
+  "scenario_context": "热胀冷缩控制",
+  "confidence": 0.8130192560879603,
+  "keywords": [
+    "异常"
+  ],
+  "blind_spot_related": "causal_chain_break",
+  "evidence_strength": "HIGH"
+}

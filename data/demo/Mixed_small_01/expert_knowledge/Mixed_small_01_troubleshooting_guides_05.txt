@@ -1,0 +1,5 @@
+# troubleshooting_guide - 2025-05-20T16:07:30.237534
+
+尝试了分区域温控，效果明显改善。
+
+--- 专家: domain_expert ---

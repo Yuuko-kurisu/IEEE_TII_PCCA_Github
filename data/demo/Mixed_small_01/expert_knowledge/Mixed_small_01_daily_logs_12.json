@@ -1,0 +1,15 @@
+{
+  "id": "Mixed_small_01_daily_logs_12",
+  "type": "daily_log",
+  "expert_profile": "domain_expert",
+  "timestamp": "2025-07-06T16:07:30.237534",
+  "content": "这种天气下，环境温度容易出现冷却不足。",
+  "scenario_context": "热胀冷缩控制",
+  "confidence": 0.7854237793754509,
+  "keywords": [
+    "温度",
+    "环境温度"
+  ],
+  "blind_spot_related": null,
+  "evidence_strength": "NONE"
+}

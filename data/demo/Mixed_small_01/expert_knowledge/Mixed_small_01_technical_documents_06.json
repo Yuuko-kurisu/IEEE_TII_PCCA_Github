@@ -1,0 +1,12 @@
+{
+  "id": "Mixed_small_01_technical_documents_06",
+  "type": "technical_notes",
+  "expert_profile": "domain_expert",
+  "timestamp": "2025-06-16T16:07:30.239535",
+  "content": "关于粉尘浓度，数据显示强相关但知识图孤立，存在严重认知盲区。",
+  "scenario_context": "热胀冷缩控制",
+  "confidence": 0.7532214249663414,
+  "keywords": [],
+  "blind_spot_related": "causal_desert",
+  "evidence_strength": "LOW"
+}

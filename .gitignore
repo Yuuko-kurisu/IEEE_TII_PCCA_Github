@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+*.log
+*.tmp
+*.zip
+*.tar.gz
+.env
+.venv/
+venv/
+results/**/raw_scores.json
+results/**/intermediate/
+

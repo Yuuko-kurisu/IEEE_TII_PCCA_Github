@@ -1,0 +1,332 @@
+{
+  "case_config": {
+    "case_id": "Mixed_small_01",
+    "method_type": "Mixed",
+    "graph_scale": "small",
+    "base_scenario": "vibration_alignment_drift",
+    "blind_spot_types": [
+      "causal_desert",
+      "causal_chain_break",
+      "confounded_relations",
+      "confounded_relations",
+      "causal_desert",
+      "causal_desert"
+    ],
+    "complexity_level": "high",
+    "expert_profile": "senior_engineer",
+    "data_quality": 0.8534518208126828,
+    "noise_level": 0.05916870207886992
+  },
+  "scenario": {
+    "id": "thermal_expansion_control",
+    "info": {
+      "name": "热胀冷缩控制",
+      "domain": "温控系统",
+      "description": "温度变化引起的机械尺寸变化",
+      "key_variables": [
+        "环境温度",
+        "材料膨胀",
+        "尺寸精度",
+        "热补偿",
+        "冷却流量"
+      ],
+      "equipment_types": [
+        "Thermal-X",
+        "Thermal-Y",
+        "Thermal-Z"
+      ],
+      "causal_chains": [
+        "环境温度 → 材料膨胀 → 尺寸精度",
+        "加热功率 → 温度分布 → 热应力",
+        "材料选择 → 膨胀系数 → 变形量",
+        "冷却速率 → 温度梯度 → 应力集中",
+        "冷却流量 → 散热效率 → 温度稳定性"
+      ],
+      "expert_strategies": [
+        "预测性热补偿",
+        "分区域温控",
+        "材料优化选择",
+        "冷却系统优化"
+      ],
+      "common_failures": [
+        "尺寸超差",
+        "热应力开裂",
+        "装配松动",
+        "精度损失",
+        "冷却不足"
+      ],
+      "domain_knowledge": {
+        "expansion_coefficient": 1.2e-05,
+        "temperature_range": [
+          -10,
+          50
+        ],
+        "compensation_algorithm": "polynomial",
+        "coolant_flow_rate": 5.0
+      },
+      "potential_hidden_variables": [
+        "室外温度波动",
+        "冷却水温度",
+        "环境气流变化",
+        "设备负载变化",
+        "材料老化系数"
+      ]
+    }
+  },
+  "instance_allocations": [
+    [
+      "causal_desert",
+      [
+        {
+          "id": "n016",
+          "text": "温度",
+          "confidence": 0.4749625104685313,
+          "node_type": "参数",
+          "scenario_specific": false,
+          "data_column_name": "sensor_n016_温度",
+          "creation_metadata": {
+            "creation_order": 16,
+            "node_type": "参数",
+            "original_text": "温度"
+          }
+        },
+        {
+          "id": "n003",
+          "text": "温度漂移",
+          "confidence": 0.4330232310452093,
+          "node_type": "现象",
+          "scenario_specific": false,
+          "data_column_name": "sensor_n003_温度漂移",
+          "creation_metadata": {
+            "creation_order": 3,
+            "node_type": "现象",
+            "original_text": "温度漂移"
+          }
+        },
+        {
+          "id": "n021",
+          "text": "过载保护",
+          "confidence": 0.5440923660291326,
+          "node_type": "故障",
+          "scenario_specific": false,
+          "data_column_name": "sensor_n021_过载保护",
+          "creation_metadata": {
+            "creation_order": 21,
+            "node_type": "故障",
+            "original_text": "过载保护"
+          }
+        },
+        {
+          "id": "n020",
+          "text": "通信中断",
+          "confidence": 0.8399539155247249,
+          "node_type": "故障",
+          "scenario_specific": false,
+          "data_column_name": "sensor_n020_通信中断",
+          "creation_metadata": {
+            "creation_order": 20,
+            "node_type": "故障",
+            "original_text": "通信中断"
+          }
+        },
+        {
+          "id": "n013",
+          "text": "安全风险增加",
+          "confidence": 0.8956480284879494,
+          "node_type": "影响",
+          "scenario_specific": false,
+          "data_column_name": "sensor_n013_安全风险增加",
+          "creation_metadata": {
+            "creation_order": 13,
+            "node_type": "影响",
+            "original_text": "安全风险增加"
+          }
+        }
+      ]
+    ],
+    [
+      "causal_chain_break",
+      [
+        {
+          "id": "n001",
+          "text": "喷头残留增加",
+          "confidence": 0.5646531787345328,
+          "node_type": "现象",
+          "scenario_specific": false,
+          "data_column_name": "sensor_n001_喷头残留增加",
+          "creation_metadata": {
+            "creation_order": 1,
+            "node_type": "现象",
+            "original_text": "喷头残留增加"
+          }
+        },
+        {
+          "id": "n014",
+          "text": "流量计",
+          "confidence": 0.6630073611767647,
+          "node_type": "设备",
+          "scenario_specific": false,
+          "data_column_name": "sensor_n014_流量计",
+          "creation_metadata": {
+            "creation_order": 14,
+            "node_type": "设备",
+            "original_text": "流量计"
+          }
+        },
+        {
+          "id": "n010",
+          "text": "优化",
+          "confidence": 0.4052838091196979,
+          "node_type": "措施",
+          "scenario_specific": false,
+          "data_column_name": "sensor_n010_优化",
+          "creation_metadata": {
+            "creation_order": 10,
+            "node_type": "措施",
+            "original_text": "优化"
+          }
+        }
+      ]
+    ],
+    [
+      "confounded_relations",
+      [
+        {
+          "id": "n012",
+          "text": "喷码工艺",
+          "confidence": 0.716730984209351,
+          "node_type": "工艺",
+          "scenario_specific": false,
+          "data_column_name": "sensor_n012_喷码工艺",
+          "creation_metadata": {
+            "creation_order": 12,
+            "node_type": "工艺",
+            "original_text": "喷码工艺"
+          }
+        },
+        {
+          "id": "n015",
+          "text": "电机",
+          "confidence": 0.4336218400975401,
+          "node_type": "设备",
+          "scenario_specific": false,
+          "data_column_name": "sensor_n015_电机",
+          "creation_metadata": {
+            "creation_order": 15,
+            "node_type": "设备",
+            "original_text": "电机"
+          },
+          "anomaly_marker": "underconfident"
+        }
+      ]
+    ],
+    [
+      "confounded_relations",
+      [
+        {
+          "id": "n022",
+          "text": "防腐剂",
+          "confidence": 0.4377615452645029,
+          "node_type": "材料",
+          "scenario_specific": false,
+          "data_column_name": "sensor_n022_防腐剂",
+          "creation_metadata": {
+            "creation_order": 22,
+            "node_type": "材料",
+            "original_text": "防腐剂"
+          }
+        },
+        {
+          "id": "n019",
+          "text": "响应时间",
+          "confidence": 0.4478282185282298,
+          "node_type": "参数",
+          "scenario_specific": false,
+          "data_column_name": "sensor_n019_响应时间",
+          "creation_metadata": {
+            "creation_order": 19,
+            "node_type": "参数",
+            "original_text": "响应时间"
+          }
+        }
+      ]
+    ],
+    [
+      "causal_desert",
+      [
+        {
+          "id": "n004",
+          "text": "尺寸精度",
+          "confidence": 0.7468712818782367,
+          "node_type": "环境",
+          "scenario_specific": true,
+          "data_column_name": "sensor_n004_尺寸精度",
+          "creation_metadata": {
+            "creation_order": 4,
+            "node_type": "环境",
+            "original_text": "尺寸精度"
+          }
+        },
+        {
+          "id": "n005",
+          "text": "气流速度",
+          "confidence": 0.6547761724245895,
+          "node_type": "环境",
+          "scenario_specific": false,
+          "data_column_name": "sensor_n005_气流速度",
+          "creation_metadata": {
+            "creation_order": 5,
+            "node_type": "环境",
+            "original_text": "气流速度"
+          },
+          "anomaly_marker": "unstable"
+        }
+      ]
+    ],
+    [
+      "causal_desert",
+      [
+        {
+          "id": "n006",
+          "text": "粉尘浓度",
+          "confidence": 0.5651020338616466,
+          "node_type": "环境",
+          "scenario_specific": false,
+          "data_column_name": "sensor_n006_粉尘浓度",
+          "creation_metadata": {
+            "creation_order": 6,
+            "node_type": "环境",
+            "original_text": "粉尘浓度"
+          }
+        },
+        {
+          "id": "n007",
+          "text": "热补偿",
+          "confidence": 0.8008299980260941,
+          "node_type": "环境",
+          "scenario_specific": true,
+          "data_column_name": "sensor_n007_热补偿",
+          "creation_metadata": {
+            "creation_order": 7,
+            "node_type": "环境",
+            "original_text": "热补偿"
+          }
+        }
+      ]
+    ]
+  ],
+  "metadata": {
+    "scenario_id": "thermal_expansion_control",
+    "graph_scale": "small",
+    "total_allocated_instances": 6,
+    "allocation_distribution": {
+      "causal_desert_0": 5,
+      "causal_chain_break_1": 3,
+      "confounded_relations_2": 2,
+      "confounded_relations_3": 2,
+      "causal_desert_4": 2,
+      "causal_desert_5": 2
+    },
+    "prepared_at": "2025-08-18T16:07:30.309805"
+  }
+}

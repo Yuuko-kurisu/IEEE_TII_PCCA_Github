@@ -1,0 +1,18 @@
+{
+  "id": "Mixed_small_01_maintenance_reports_01",
+  "type": "maintenance_report",
+  "expert_profile": "domain_expert",
+  "timestamp": "2025-07-20T16:07:30.237534",
+  "content": "维护分析报告：经过30天数据回溯，温度与关键KPI的相关性统计如下：产品质量(r=0.86)、生产效率(r=0.79)、设备稳定性(r=0.82)、能耗水平(r=0.74)。然而，当前知识图谱中温度的输出连接数为0，输入连接权重<0.3。存在严重的知识表示缺陷。建议将温度升级为一级关键因子。",
+  "scenario_context": "热胀冷缩控制",
+  "confidence": 0.9421685262073936,
+  "keywords": [
+    "温度",
+    "相关性",
+    "分析",
+    "维护",
+    "质量"
+  ],
+  "blind_spot_related": "causal_desert",
+  "evidence_strength": "LOW"
+}

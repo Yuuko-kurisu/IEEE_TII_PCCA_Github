@@ -1,0 +1,81 @@
+{
+  "total_blind_spots": 6,
+  "blind_spot_types": [
+    "causal_desert",
+    "causal_chain_break",
+    "confounded_relations",
+    "confounded_relations",
+    "causal_desert",
+    "causal_desert"
+  ],
+  "evidence_summary": {
+    "causal_desert": {
+      "target_nodes": [
+        "粉尘浓度"
+      ],
+      "severity": 0.8,
+      "ckg_modifications": 11,
+      "sensor_data_rules": 4,
+      "expert_strategies": 6,
+      "text_patterns": 6
+    },
+    "causal_chain_break": {
+      "target_nodes": [
+        "喷头残留增加",
+        "流量计",
+        "优化"
+      ],
+      "severity": 0.8,
+      "ckg_modifications": 10,
+      "sensor_data_rules": 4,
+      "expert_strategies": 5,
+      "text_patterns": 5
+    },
+    "confounded_relations": {
+      "target_nodes": [
+        "防腐剂",
+        "响应时间"
+      ],
+      "severity": 0.8,
+      "ckg_modifications": 12,
+      "sensor_data_rules": 4,
+      "expert_strategies": 6,
+      "text_patterns": 6
+    }
+  },
+  "cross_dimensional_clues": {
+    "causal_desert": [
+      "数据证据：sensor_n006_粉尘浓度与核心KPI平均相关系数0.90+",
+      "知识鸿沟：节点n006(粉尘浓度)在CKG中输出连接数=0",
+      "专家证据：15+文档明确提及粉尘浓度的关键作用",
+      "系统盲点：传感器列sensor_n006_粉尘浓度未被纳入任何故障诊断流程",
+      "效果验证：调整sensor_n006_粉尘浓度后系统性能提升20-30%",
+      "时间证据：sensor_n006_粉尘浓度异常领先质量问题1-4小时出现",
+      "统计证据：1个KPI与sensor_n006_粉尘浓度相关性>0.84",
+      "合同执行：严格使用预分配节点['n006', 'n007']",
+      "数字线程验证：精确列名['sensor_n006_粉尘浓度', 'sensor_n007_热补偿']"
+    ],
+    "causal_chain_break": [
+      "因果链置信度：喷头残留增加 -> 流量计 -> 优化平均置信度<0.4",
+      "数据不稳定：传导成功率15%-75%波动（效应量>0.5）",
+      "专家证据：多次提及传导路径的不确定性",
+      "条件依赖：传导效果受环境因素强烈影响",
+      "合同执行：严格使用预分配节点['n001', 'n014', 'n010']",
+      "数字线程验证：精确列名['sensor_n001_喷头残留增加', 'sensor_n014_流量计', 'sensor_n010_优化']"
+    ],
+    "confounded_relations": [
+      "虚假关联：防腐剂→响应时间观察相关性0.89+",
+      "隐藏原因：冷却水温度同时驱动两个变量",
+      "专家证据：多次质疑防腐剂与响应时间的直接因果关系",
+      "Simpson悖论：控制混杂因子后相关性<0.1",
+      "合同执行：严格使用预分配节点n022(防腐剂) ↔ n019(响应时间)",
+      "数字线程验证：精确列名['sensor_n022_防腐剂', 'sensor_n019_响应时间']",
+      "混杂强度：隐藏变量冷却水温度对两变量影响均>0.82"
+    ]
+  },
+  "detection_hints": {
+    "causal_desert": "寻找数据强相关(>0.7)但CKG孤立的节点",
+    "causal_chain_break": "寻找因果链置信度低(<0.5)且数据传导不稳定的路径",
+    "confounded_relations": "寻找强统计关联但控制混杂因子后关联消失的变量对"
+  }
+}

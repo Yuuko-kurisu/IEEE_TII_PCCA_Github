@@ -1,0 +1,17 @@
+{
+  "id": "Mixed_small_01_maintenance_reports_07",
+  "type": "maintenance_report",
+  "expert_profile": "domain_expert",
+  "timestamp": "2025-07-07T16:07:30.237534",
+  "content": "设备诊断发现温度是多个故障模式的共同先导因子：类型A故障(预测准确率91%)、类型B故障(预测准确率87%)、类型C故障(预测准确率83%)。温度的预警价值极高，但当前AI系统的因果推理完全忽略了温度。这是典型的'因果荒漠'现象。",
+  "scenario_context": "热胀冷缩控制",
+  "confidence": 0.9094330241515863,
+  "keywords": [
+    "温度",
+    "因果",
+    "故障",
+    "荒漠"
+  ],
+  "blind_spot_related": "causal_desert",
+  "evidence_strength": "LOW"
+}

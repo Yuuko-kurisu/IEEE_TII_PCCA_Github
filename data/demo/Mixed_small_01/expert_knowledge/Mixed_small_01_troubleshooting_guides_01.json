@@ -1,0 +1,15 @@
+{
+  "id": "Mixed_small_01_troubleshooting_guides_01",
+  "type": "troubleshooting_guide",
+  "expert_profile": "domain_expert",
+  "timestamp": "2025-07-14T16:07:30.237534",
+  "content": "故障现象：热应力开裂。初步判断是环境因素影响。",
+  "scenario_context": "热胀冷缩控制",
+  "confidence": 0.7472048593156134,
+  "keywords": [
+    "故障",
+    "判断"
+  ],
+  "blind_spot_related": null,
+  "evidence_strength": "NONE"
+}

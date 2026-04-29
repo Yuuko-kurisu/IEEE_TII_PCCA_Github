@@ -1,0 +1,16 @@
+{
+  "id": "Mixed_small_01_troubleshooting_guides_12",
+  "type": "troubleshooting_guide",
+  "expert_profile": "domain_expert",
+  "timestamp": "2025-07-12T16:07:30.238534",
+  "content": "按照经验，这种情况通常是环境温度变化导致的。",
+  "scenario_context": "热胀冷缩控制",
+  "confidence": 0.7224655469858103,
+  "keywords": [
+    "温度",
+    "经验",
+    "环境温度"
+  ],
+  "blind_spot_related": null,
+  "evidence_strength": "NONE"
+}

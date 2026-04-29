@@ -1,0 +1,1486 @@
+{
+  "nodes_by_type": {
+    "现象": [
+      {
+        "id": "n001",
+        "text": "喷头残留增加",
+        "confidence": 0.5646531787345328,
+        "node_type": "现象",
+        "scenario_specific": false,
+        "data_column_name": "sensor_n001_喷头残留增加",
+        "creation_metadata": {
+          "creation_order": 1,
+          "node_type": "现象",
+          "original_text": "喷头残留增加"
+        }
+      },
+      {
+        "id": "n002",
+        "text": "精度下降",
+        "confidence": 0.5624679177313514,
+        "node_type": "现象",
+        "scenario_specific": false,
+        "data_column_name": "sensor_n002_精度下降",
+        "creation_metadata": {
+          "creation_order": 2,
+          "node_type": "现象",
+          "original_text": "精度下降"
+        }
+      },
+      {
+        "id": "n003",
+        "text": "温度漂移",
+        "confidence": 0.4330232310452093,
+        "node_type": "现象",
+        "scenario_specific": false,
+        "data_column_name": "sensor_n003_温度漂移",
+        "creation_metadata": {
+          "creation_order": 3,
+          "node_type": "现象",
+          "original_text": "温度漂移"
+        }
+      }
+    ],
+    "环境": [
+      {
+        "id": "n004",
+        "text": "尺寸精度",
+        "confidence": 0.7468712818782367,
+        "node_type": "环境",
+        "scenario_specific": true,
+        "data_column_name": "sensor_n004_尺寸精度",
+        "creation_metadata": {
+          "creation_order": 4,
+          "node_type": "环境",
+          "original_text": "尺寸精度"
+        }
+      },
+      {
+        "id": "n005",
+        "text": "气流速度",
+        "confidence": 0.6547761724245895,
+        "node_type": "环境",
+        "scenario_specific": false,
+        "data_column_name": "sensor_n005_气流速度",
+        "creation_metadata": {
+          "creation_order": 5,
+          "node_type": "环境",
+          "original_text": "气流速度"
+        },
+        "anomaly_marker": "unstable"
+      },
+      {
+        "id": "n006",
+        "text": "粉尘浓度",
+        "confidence": 0.5651020338616466,
+        "node_type": "环境",
+        "scenario_specific": false,
+        "data_column_name": "sensor_n006_粉尘浓度",
+        "creation_metadata": {
+          "creation_order": 6,
+          "node_type": "环境",
+          "original_text": "粉尘浓度"
+        }
+      },
+      {
+        "id": "n007",
+        "text": "热补偿",
+        "confidence": 0.8008299980260941,
+        "node_type": "环境",
+        "scenario_specific": true,
+        "data_column_name": "sensor_n007_热补偿",
+        "creation_metadata": {
+          "creation_order": 7,
+          "node_type": "环境",
+          "original_text": "热补偿"
+        }
+      }
+    ],
+    "措施": [
+      {
+        "id": "n008",
+        "text": "维护",
+        "confidence": 0.7979224910248492,
+        "node_type": "措施",
+        "scenario_specific": false,
+        "data_column_name": "sensor_n008_维护",
+        "creation_metadata": {
+          "creation_order": 8,
+          "node_type": "措施",
+          "original_text": "维护"
+        }
+      },
+      {
+        "id": "n009",
+        "text": "监控",
+        "confidence": 0.8058046754122454,
+        "node_type": "措施",
+        "scenario_specific": false,
+        "data_column_name": "sensor_n009_监控",
+        "creation_metadata": {
+          "creation_order": 9,
+          "node_type": "措施",
+          "original_text": "监控"
+        }
+      },
+      {
+        "id": "n010",
+        "text": "优化",
+        "confidence": 0.4052838091196979,
+        "node_type": "措施",
+        "scenario_specific": false,
+        "data_column_name": "sensor_n010_优化",
+        "creation_metadata": {
+          "creation_order": 10,
+          "node_type": "措施",
+          "original_text": "优化"
+        }
+      }
+    ],
+    "工艺": [
+      {
+        "id": "n011",
+        "text": "控制工艺",
+        "confidence": 0.5284533724878642,
+        "node_type": "工艺",
+        "scenario_specific": false,
+        "data_column_name": "sensor_n011_控制工艺",
+        "creation_metadata": {
+          "creation_order": 11,
+          "node_type": "工艺",
+          "original_text": "控制工艺"
+        }
+      },
+      {
+        "id": "n012",
+        "text": "喷码工艺",
+        "confidence": 0.716730984209351,
+        "node_type": "工艺",
+        "scenario_specific": false,
+        "data_column_name": "sensor_n012_喷码工艺",
+        "creation_metadata": {
+          "creation_order": 12,
+          "node_type": "工艺",
+          "original_text": "喷码工艺"
+        }
+      }
+    ],
+    "影响": [
+      {
+        "id": "n013",
+        "text": "安全风险增加",
+        "confidence": 0.8956480284879494,
+        "node_type": "影响",
+        "scenario_specific": false,
+        "data_column_name": "sensor_n013_安全风险增加",
+        "creation_metadata": {
+          "creation_order": 13,
+          "node_type": "影响",
+          "original_text": "安全风险增加"
+        }
+      }
+    ],
+    "设备": [
+      {
+        "id": "n014",
+        "text": "流量计",
+        "confidence": 0.6630073611767647,
+        "node_type": "设备",
+        "scenario_specific": false,
+        "data_column_name": "sensor_n014_流量计",
+        "creation_metadata": {
+          "creation_order": 14,
+          "node_type": "设备",
+          "original_text": "流量计"
+        }
+      },
+      {
+        "id": "n015",
+        "text": "电机",
+        "confidence": 0.4336218400975401,
+        "node_type": "设备",
+        "scenario_specific": false,
+        "data_column_name": "sensor_n015_电机",
+        "creation_metadata": {
+          "creation_order": 15,
+          "node_type": "设备",
+          "original_text": "电机"
+        },
+        "anomaly_marker": "underconfident"
+      }
+    ],
+    "参数": [
+      {
+        "id": "n016",
+        "text": "温度",
+        "confidence": 0.4749625104685313,
+        "node_type": "参数",
+        "scenario_specific": false,
+        "data_column_name": "sensor_n016_温度",
+        "creation_metadata": {
+          "creation_order": 16,
+          "node_type": "参数",
+          "original_text": "温度"
+        }
+      },
+      {
+        "id": "n017",
+        "text": "速度",
+        "confidence": 0.8973306591408312,
+        "node_type": "参数",
+        "scenario_specific": false,
+        "data_column_name": "sensor_n017_速度",
+        "creation_metadata": {
+          "creation_order": 17,
+          "node_type": "参数",
+          "original_text": "速度"
+        }
+      },
+      {
+        "id": "n018",
+        "text": "功率",
+        "confidence": 0.40448859183109653,
+        "node_type": "参数",
+        "scenario_specific": false,
+        "data_column_name": "sensor_n018_功率",
+        "creation_metadata": {
+          "creation_order": 18,
+          "node_type": "参数",
+          "original_text": "功率"
+        }
+      },
+      {
+        "id": "n019",
+        "text": "响应时间",
+        "confidence": 0.4478282185282298,
+        "node_type": "参数",
+        "scenario_specific": false,
+        "data_column_name": "sensor_n019_响应时间",
+        "creation_metadata": {
+          "creation_order": 19,
+          "node_type": "参数",
+          "original_text": "响应时间"
+        }
+      }
+    ],
+    "故障": [
+      {
+        "id": "n020",
+        "text": "通信中断",
+        "confidence": 0.8399539155247249,
+        "node_type": "故障",
+        "scenario_specific": false,
+        "data_column_name": "sensor_n020_通信中断",
+        "creation_metadata": {
+          "creation_order": 20,
+          "node_type": "故障",
+          "original_text": "通信中断"
+        }
+      },
+      {
+        "id": "n021",
+        "text": "过载保护",
+        "confidence": 0.5440923660291326,
+        "node_type": "故障",
+        "scenario_specific": false,
+        "data_column_name": "sensor_n021_过载保护",
+        "creation_metadata": {
+          "creation_order": 21,
+          "node_type": "故障",
+          "original_text": "过载保护"
+        }
+      }
+    ],
+    "材料": [
+      {
+        "id": "n022",
+        "text": "防腐剂",
+        "confidence": 0.4377615452645029,
+        "node_type": "材料",
+        "scenario_specific": false,
+        "data_column_name": "sensor_n022_防腐剂",
+        "creation_metadata": {
+          "creation_order": 22,
+          "node_type": "材料",
+          "original_text": "防腐剂"
+        }
+      },
+      {
+        "id": "n023",
+        "text": "复合材料",
+        "confidence": 0.7770900491094366,
+        "node_type": "材料",
+        "scenario_specific": false,
+        "data_column_name": "sensor_n023_复合材料",
+        "creation_metadata": {
+          "creation_order": 23,
+          "node_type": "材料",
+          "original_text": "复合材料"
+        }
+      },
+      {
+        "id": "n024",
+        "text": "涂层",
+        "confidence": 0.8908715792292683,
+        "node_type": "材料",
+        "scenario_specific": false,
+        "data_column_name": "sensor_n024_涂层",
+        "creation_metadata": {
+          "creation_order": 24,
+          "node_type": "材料",
+          "original_text": "涂层"
+        }
+      }
+    ],
+    "hidden_factors": [
+      {
+        "id": "n027",
+        "text": "冷却水温度",
+        "confidence": 0.9,
+        "node_type": "hidden",
+        "scenario_specific": false,
+        "data_column_name": "hidden_confounder_冷却水温度",
+        "creation_metadata": {
+          "creation_order": 27,
+          "node_type": "hidden",
+          "original_text": "冷却水温度"
+        }
+      },
+      {
+        "id": "n028",
+        "text": "环境气流变化",
+        "confidence": 0.9,
+        "node_type": "hidden",
+        "scenario_specific": false,
+        "data_column_name": "hidden_confounder_环境气流变化",
+        "creation_metadata": {
+          "creation_order": 28,
+          "node_type": "hidden",
+          "original_text": "环境气流变化"
+        }
+      }
+    ]
+  },
+  "edges": {
+    "n018->n016": [
+      {
+        "source": "n018",
+        "target": "n016",
+        "confidence": 0.16080053690343507,
+        "relation": "因果影响",
+        "mechanism": "加热功率导致温度分布",
+        "strength": 0.6556918468182582,
+        "type_info": [
+          "参数",
+          "因果",
+          "参数"
+        ],
+        "is_scenario_based": true,
+        "contract_enforced": true
+      }
+    ],
+    "n014->n001": [
+      {
+        "source": "n014",
+        "target": "n001",
+        "confidence": 0.854654419668651,
+        "relation": "产生",
+        "type_info": [
+          "设备",
+          "产生",
+          "现象"
+        ],
+        "is_type_based": true
+      }
+    ],
+    "n001->n020": [
+      {
+        "source": "n001",
+        "target": "n020",
+        "confidence": 0.700500159090136,
+        "relation": "导致",
+        "type_info": [
+          "现象",
+          "导致",
+          "故障"
+        ],
+        "is_type_based": true
+      }
+    ],
+    "n021->n013": [
+      {
+        "source": "n021",
+        "target": "n013",
+        "confidence": 0.4467168309997793,
+        "relation": "影响",
+        "type_info": [
+          "故障",
+          "关联",
+          "影响"
+        ],
+        "is_random": true
+      }
+    ],
+    "n010->n020": [
+      {
+        "source": "n010",
+        "target": "n020",
+        "confidence": 0.8112116002217468,
+        "relation": "解决",
+        "type_info": [
+          "措施",
+          "解决",
+          "故障"
+        ],
+        "is_type_based": true
+      }
+    ],
+    "n018->n012": [
+      {
+        "source": "n018",
+        "target": "n012",
+        "confidence": 0.6315566572371958,
+        "relation": "控制",
+        "type_info": [
+          "参数",
+          "控制",
+          "工艺"
+        ],
+        "is_type_based": true
+      }
+    ],
+    "n024->n014": [
+      {
+        "source": "n024",
+        "target": "n014",
+        "confidence": 0.6352200770016233,
+        "relation": "构成",
+        "type_info": [
+          "材料",
+          "构成",
+          "设备"
+        ],
+        "is_type_based": true
+      }
+    ],
+    "n005->n022": [
+      {
+        "source": "n005",
+        "target": "n022",
+        "confidence": 0.5641866883524582,
+        "relation": "影响",
+        "type_info": [
+          "环境",
+          "影响",
+          "材料"
+        ],
+        "is_type_based": true
+      }
+    ],
+    "n015->n005": [
+      {
+        "source": "n015",
+        "target": "n005",
+        "confidence": 0.37005137300575225,
+        "relation": "依赖",
+        "type_info": [
+          "设备",
+          "关联",
+          "环境"
+        ],
+        "is_random": true
+      }
+    ],
+    "n003->n016": [
+      {
+        "source": "n003",
+        "target": "n016",
+        "confidence": 0.12,
+        "relation": "相关",
+        "type_info": [
+          "现象",
+          "关联",
+          "参数"
+        ],
+        "is_random": true,
+        "contract_enforced": true
+      }
+    ],
+    "n023->n018": [
+      {
+        "source": "n023",
+        "target": "n018",
+        "confidence": 0.5705739130746978,
+        "relation": "关联",
+        "type_info": [
+          "材料",
+          "关联",
+          "参数"
+        ],
+        "is_random": true
+      }
+    ],
+    "n020->n004": [
+      {
+        "source": "n020",
+        "target": "n004",
+        "confidence": 0.12,
+        "relation": "依赖",
+        "type_info": [
+          "故障",
+          "关联",
+          "环境"
+        ],
+        "is_random": true,
+        "contract_enforced": true
+      }
+    ],
+    "n010->n002": [
+      {
+        "source": "n010",
+        "target": "n002",
+        "confidence": 0.39631783249931135,
+        "relation": "关联",
+        "type_info": [
+          "措施",
+          "关联",
+          "现象"
+        ],
+        "is_random": true
+      }
+    ],
+    "n001->n008": [
+      {
+        "source": "n001",
+        "target": "n008",
+        "confidence": 0.3817292510405601,
+        "relation": "影响",
+        "type_info": [
+          "现象",
+          "关联",
+          "措施"
+        ],
+        "is_random": true
+      }
+    ],
+    "n019->n012": [
+      {
+        "source": "n019",
+        "target": "n012",
+        "confidence": 0.42895719862241133,
+        "relation": "依赖",
+        "type_info": [
+          "参数",
+          "关联",
+          "工艺"
+        ],
+        "is_random": true
+      }
+    ],
+    "n003->n009": [
+      {
+        "source": "n003",
+        "target": "n009",
+        "confidence": 0.5683097619993358,
+        "relation": "依赖",
+        "type_info": [
+          "现象",
+          "关联",
+          "措施"
+        ],
+        "is_random": true
+      }
+    ],
+    "n013->n012": [
+      {
+        "source": "n013",
+        "target": "n012",
+        "confidence": 0.3174094136648841,
+        "relation": "依赖",
+        "type_info": [
+          "影响",
+          "关联",
+          "工艺"
+        ],
+        "is_random": true
+      }
+    ],
+    "n015->n012": [
+      {
+        "source": "n015",
+        "target": "n012",
+        "confidence": 0.5253387601003552,
+        "relation": "相关",
+        "type_info": [
+          "设备",
+          "关联",
+          "工艺"
+        ],
+        "is_random": true
+      }
+    ],
+    "n012->n023": [
+      {
+        "source": "n012",
+        "target": "n023",
+        "confidence": 0.5578989982299927,
+        "relation": "依赖",
+        "type_info": [
+          "工艺",
+          "关联",
+          "材料"
+        ],
+        "is_random": true
+      }
+    ],
+    "n005->n008": [
+      {
+        "source": "n005",
+        "target": "n008",
+        "confidence": 0.32257247826198393,
+        "relation": "依赖",
+        "type_info": [
+          "环境",
+          "关联",
+          "措施"
+        ],
+        "is_random": true
+      }
+    ],
+    "n024->n007": [
+      {
+        "source": "n024",
+        "target": "n007",
+        "confidence": 0.33530157296592134,
+        "relation": "关联",
+        "type_info": [
+          "材料",
+          "关联",
+          "环境"
+        ],
+        "is_random": true
+      }
+    ],
+    "n007->n022": [
+      {
+        "source": "n007",
+        "target": "n022",
+        "confidence": 0.4492389365129493,
+        "relation": "关联",
+        "type_info": [
+          "环境",
+          "关联",
+          "材料"
+        ],
+        "is_random": true
+      }
+    ],
+    "n003->n021": [
+      {
+        "source": "n003",
+        "target": "n021",
+        "confidence": 0.5917259436535308,
+        "relation": "关联",
+        "type_info": [
+          "现象",
+          "关联",
+          "故障"
+        ],
+        "is_random": true
+      }
+    ],
+    "n011->n023": [
+      {
+        "source": "n011",
+        "target": "n023",
+        "confidence": 0.5265129389751533,
+        "relation": "关联",
+        "type_info": [
+          "工艺",
+          "关联",
+          "材料"
+        ],
+        "is_random": true
+      }
+    ],
+    "n007->n019": [
+      {
+        "source": "n007",
+        "target": "n019",
+        "confidence": 0.48361545364361036,
+        "relation": "相关",
+        "type_info": [
+          "环境",
+          "关联",
+          "参数"
+        ],
+        "is_random": true
+      }
+    ],
+    "n001->n014": [
+      {
+        "source": "n001",
+        "target": "n014",
+        "confidence": 0.32982444928250654,
+        "relation": "不稳定影响",
+        "contract_enforced": true,
+        "instability_marker": true,
+        "condition_dependent": true
+      }
+    ],
+    "n014->n010": [
+      {
+        "source": "n014",
+        "target": "n010",
+        "confidence": 0.37990814354467106,
+        "relation": "条件传导",
+        "contract_enforced": true,
+        "instability_marker": true,
+        "condition_dependent": true
+      }
+    ],
+    "n012->n015": [
+      {
+        "source": "n012",
+        "target": "n015",
+        "confidence": 0.9380000000000001,
+        "relation": "强关联",
+        "is_confounded": true,
+        "hidden_confounder": "环境气流变化",
+        "spurious_correlation": true,
+        "contract_enforced": true,
+        "allocated_nodes": [
+          "n012",
+          "n015"
+        ]
+      }
+    ],
+    "n022->n019": [
+      {
+        "source": "n022",
+        "target": "n019",
+        "confidence": 0.9380000000000001,
+        "relation": "强关联",
+        "is_confounded": true,
+        "hidden_confounder": "冷却水温度",
+        "spurious_correlation": true,
+        "contract_enforced": true,
+        "allocated_nodes": [
+          "n022",
+          "n019"
+        ]
+      }
+    ]
+  },
+  "scenario_context": "热胀冷缩控制",
+  "graph_scale": "small",
+  "total_nodes": 28,
+  "total_edges": 29,
+  "scale_config": {
+    "min_nodes": 20,
+    "max_nodes": 35,
+    "min_edges": 30,
+    "max_edges": 50,
+    "complexity_factor": 1.0
+  },
+  "node_id_to_column_mapping": {
+    "n001": "sensor_n001_喷头残留增加",
+    "n002": "sensor_n002_精度下降",
+    "n003": "sensor_n003_温度漂移",
+    "n004": "sensor_n004_尺寸精度",
+    "n005": "sensor_n005_气流速度",
+    "n006": "sensor_n006_粉尘浓度",
+    "n007": "sensor_n007_热补偿",
+    "n008": "sensor_n008_维护",
+    "n009": "sensor_n009_监控",
+    "n010": "sensor_n010_优化",
+    "n011": "sensor_n011_控制工艺",
+    "n012": "sensor_n012_喷码工艺",
+    "n013": "sensor_n013_安全风险增加",
+    "n014": "sensor_n014_流量计",
+    "n015": "sensor_n015_电机",
+    "n016": "sensor_n016_温度",
+    "n017": "sensor_n017_速度",
+    "n018": "sensor_n018_功率",
+    "n019": "sensor_n019_响应时间",
+    "n020": "sensor_n020_通信中断",
+    "n021": "sensor_n021_过载保护",
+    "n022": "sensor_n022_防腐剂",
+    "n023": "sensor_n023_复合材料",
+    "n024": "sensor_n024_涂层",
+    "n025": "hidden_confounder_冷却水温度",
+    "n026": "hidden_confounder_环境气流变化",
+    "n027": "hidden_confounder_冷却水温度",
+    "n028": "hidden_confounder_环境气流变化"
+  },
+  "column_to_node_mapping": {
+    "sensor_n001_喷头残留增加": {
+      "id": "n001",
+      "text": "喷头残留增加",
+      "confidence": 0.5646531787345328,
+      "node_type": "现象",
+      "scenario_specific": false,
+      "data_column_name": "sensor_n001_喷头残留增加",
+      "creation_metadata": {
+        "creation_order": 1,
+        "node_type": "现象",
+        "original_text": "喷头残留增加"
+      }
+    },
+    "sensor_n002_精度下降": {
+      "id": "n002",
+      "text": "精度下降",
+      "confidence": 0.5624679177313514,
+      "node_type": "现象",
+      "scenario_specific": false,
+      "data_column_name": "sensor_n002_精度下降",
+      "creation_metadata": {
+        "creation_order": 2,
+        "node_type": "现象",
+        "original_text": "精度下降"
+      }
+    },
+    "sensor_n003_温度漂移": {
+      "id": "n003",
+      "text": "温度漂移",
+      "confidence": 0.4330232310452093,
+      "node_type": "现象",
+      "scenario_specific": false,
+      "data_column_name": "sensor_n003_温度漂移",
+      "creation_metadata": {
+        "creation_order": 3,
+        "node_type": "现象",
+        "original_text": "温度漂移"
+      }
+    },
+    "sensor_n004_尺寸精度": {
+      "id": "n004",
+      "text": "尺寸精度",
+      "confidence": 0.7468712818782367,
+      "node_type": "环境",
+      "scenario_specific": true,
+      "data_column_name": "sensor_n004_尺寸精度",
+      "creation_metadata": {
+        "creation_order": 4,
+        "node_type": "环境",
+        "original_text": "尺寸精度"
+      }
+    },
+    "sensor_n005_气流速度": {
+      "id": "n005",
+      "text": "气流速度",
+      "confidence": 0.6547761724245895,
+      "node_type": "环境",
+      "scenario_specific": false,
+      "data_column_name": "sensor_n005_气流速度",
+      "creation_metadata": {
+        "creation_order": 5,
+        "node_type": "环境",
+        "original_text": "气流速度"
+      },
+      "anomaly_marker": "unstable"
+    },
+    "sensor_n006_粉尘浓度": {
+      "id": "n006",
+      "text": "粉尘浓度",
+      "confidence": 0.5651020338616466,
+      "node_type": "环境",
+      "scenario_specific": false,
+      "data_column_name": "sensor_n006_粉尘浓度",
+      "creation_metadata": {
+        "creation_order": 6,
+        "node_type": "环境",
+        "original_text": "粉尘浓度"
+      }
+    },
+    "sensor_n007_热补偿": {
+      "id": "n007",
+      "text": "热补偿",
+      "confidence": 0.8008299980260941,
+      "node_type": "环境",
+      "scenario_specific": true,
+      "data_column_name": "sensor_n007_热补偿",
+      "creation_metadata": {
+        "creation_order": 7,
+        "node_type": "环境",
+        "original_text": "热补偿"
+      }
+    },
+    "sensor_n008_维护": {
+      "id": "n008",
+      "text": "维护",
+      "confidence": 0.7979224910248492,
+      "node_type": "措施",
+      "scenario_specific": false,
+      "data_column_name": "sensor_n008_维护",
+      "creation_metadata": {
+        "creation_order": 8,
+        "node_type": "措施",
+        "original_text": "维护"
+      }
+    },
+    "sensor_n009_监控": {
+      "id": "n009",
+      "text": "监控",
+      "confidence": 0.8058046754122454,
+      "node_type": "措施",
+      "scenario_specific": false,
+      "data_column_name": "sensor_n009_监控",
+      "creation_metadata": {
+        "creation_order": 9,
+        "node_type": "措施",
+        "original_text": "监控"
+      }
+    },
+    "sensor_n010_优化": {
+      "id": "n010",
+      "text": "优化",
+      "confidence": 0.4052838091196979,
+      "node_type": "措施",
+      "scenario_specific": false,
+      "data_column_name": "sensor_n010_优化",
+      "creation_metadata": {
+        "creation_order": 10,
+        "node_type": "措施",
+        "original_text": "优化"
+      }
+    },
+    "sensor_n011_控制工艺": {
+      "id": "n011",
+      "text": "控制工艺",
+      "confidence": 0.5284533724878642,
+      "node_type": "工艺",
+      "scenario_specific": false,
+      "data_column_name": "sensor_n011_控制工艺",
+      "creation_metadata": {
+        "creation_order": 11,
+        "node_type": "工艺",
+        "original_text": "控制工艺"
+      }
+    },
+    "sensor_n012_喷码工艺": {
+      "id": "n012",
+      "text": "喷码工艺",
+      "confidence": 0.716730984209351,
+      "node_type": "工艺",
+      "scenario_specific": false,
+      "data_column_name": "sensor_n012_喷码工艺",
+      "creation_metadata": {
+        "creation_order": 12,
+        "node_type": "工艺",
+        "original_text": "喷码工艺"
+      }
+    },
+    "sensor_n013_安全风险增加": {
+      "id": "n013",
+      "text": "安全风险增加",
+      "confidence": 0.8956480284879494,
+      "node_type": "影响",
+      "scenario_specific": false,
+      "data_column_name": "sensor_n013_安全风险增加",
+      "creation_metadata": {
+        "creation_order": 13,
+        "node_type": "影响",
+        "original_text": "安全风险增加"
+      }
+    },
+    "sensor_n014_流量计": {
+      "id": "n014",
+      "text": "流量计",
+      "confidence": 0.6630073611767647,
+      "node_type": "设备",
+      "scenario_specific": false,
+      "data_column_name": "sensor_n014_流量计",
+      "creation_metadata": {
+        "creation_order": 14,
+        "node_type": "设备",
+        "original_text": "流量计"
+      }
+    },
+    "sensor_n015_电机": {
+      "id": "n015",
+      "text": "电机",
+      "confidence": 0.4336218400975401,
+      "node_type": "设备",
+      "scenario_specific": false,
+      "data_column_name": "sensor_n015_电机",
+      "creation_metadata": {
+        "creation_order": 15,
+        "node_type": "设备",
+        "original_text": "电机"
+      },
+      "anomaly_marker": "underconfident"
+    },
+    "sensor_n016_温度": {
+      "id": "n016",
+      "text": "温度",
+      "confidence": 0.4749625104685313,
+      "node_type": "参数",
+      "scenario_specific": false,
+      "data_column_name": "sensor_n016_温度",
+      "creation_metadata": {
+        "creation_order": 16,
+        "node_type": "参数",
+        "original_text": "温度"
+      }
+    },
+    "sensor_n017_速度": {
+      "id": "n017",
+      "text": "速度",
+      "confidence": 0.8973306591408312,
+      "node_type": "参数",
+      "scenario_specific": false,
+      "data_column_name": "sensor_n017_速度",
+      "creation_metadata": {
+        "creation_order": 17,
+        "node_type": "参数",
+        "original_text": "速度"
+      }
+    },
+    "sensor_n018_功率": {
+      "id": "n018",
+      "text": "功率",
+      "confidence": 0.40448859183109653,
+      "node_type": "参数",
+      "scenario_specific": false,
+      "data_column_name": "sensor_n018_功率",
+      "creation_metadata": {
+        "creation_order": 18,
+        "node_type": "参数",
+        "original_text": "功率"
+      }
+    },
+    "sensor_n019_响应时间": {
+      "id": "n019",
+      "text": "响应时间",
+      "confidence": 0.4478282185282298,
+      "node_type": "参数",
+      "scenario_specific": false,
+      "data_column_name": "sensor_n019_响应时间",
+      "creation_metadata": {
+        "creation_order": 19,
+        "node_type": "参数",
+        "original_text": "响应时间"
+      }
+    },
+    "sensor_n020_通信中断": {
+      "id": "n020",
+      "text": "通信中断",
+      "confidence": 0.8399539155247249,
+      "node_type": "故障",
+      "scenario_specific": false,
+      "data_column_name": "sensor_n020_通信中断",
+      "creation_metadata": {
+        "creation_order": 20,
+        "node_type": "故障",
+        "original_text": "通信中断"
+      }
+    },
+    "sensor_n021_过载保护": {
+      "id": "n021",
+      "text": "过载保护",
+      "confidence": 0.5440923660291326,
+      "node_type": "故障",
+      "scenario_specific": false,
+      "data_column_name": "sensor_n021_过载保护",
+      "creation_metadata": {
+        "creation_order": 21,
+        "node_type": "故障",
+        "original_text": "过载保护"
+      }
+    },
+    "sensor_n022_防腐剂": {
+      "id": "n022",
+      "text": "防腐剂",
+      "confidence": 0.4377615452645029,
+      "node_type": "材料",
+      "scenario_specific": false,
+      "data_column_name": "sensor_n022_防腐剂",
+      "creation_metadata": {
+        "creation_order": 22,
+        "node_type": "材料",
+        "original_text": "防腐剂"
+      }
+    },
+    "sensor_n023_复合材料": {
+      "id": "n023",
+      "text": "复合材料",
+      "confidence": 0.7770900491094366,
+      "node_type": "材料",
+      "scenario_specific": false,
+      "data_column_name": "sensor_n023_复合材料",
+      "creation_metadata": {
+        "creation_order": 23,
+        "node_type": "材料",
+        "original_text": "复合材料"
+      }
+    },
+    "sensor_n024_涂层": {
+      "id": "n024",
+      "text": "涂层",
+      "confidence": 0.8908715792292683,
+      "node_type": "材料",
+      "scenario_specific": false,
+      "data_column_name": "sensor_n024_涂层",
+      "creation_metadata": {
+        "creation_order": 24,
+        "node_type": "材料",
+        "original_text": "涂层"
+      }
+    },
+    "hidden_confounder_冷却水温度": {
+      "id": "n027",
+      "text": "冷却水温度",
+      "confidence": 0.9,
+      "node_type": "hidden",
+      "scenario_specific": false,
+      "data_column_name": "hidden_confounder_冷却水温度",
+      "creation_metadata": {
+        "creation_order": 27,
+        "node_type": "hidden",
+        "original_text": "冷却水温度"
+      }
+    },
+    "hidden_confounder_环境气流变化": {
+      "id": "n028",
+      "text": "环境气流变化",
+      "confidence": 0.9,
+      "node_type": "hidden",
+      "scenario_specific": false,
+      "data_column_name": "hidden_confounder_环境气流变化",
+      "creation_metadata": {
+        "creation_order": 28,
+        "node_type": "hidden",
+        "original_text": "环境气流变化"
+      }
+    }
+  },
+  "special_columns_info": {
+    "causal_desert": {
+      "target_column": "sensor_n006_粉尘浓度",
+      "target_node_info": {
+        "id": "n006",
+        "text": "粉尘浓度",
+        "column": "sensor_n006_粉尘浓度"
+      },
+      "kpi_columns": [
+        "sensor_n007_热补偿"
+      ],
+      "kpi_node_mapping": {
+        "sensor_n007_热补偿": {
+          "id": "n007",
+          "text": "热补偿",
+          "column": "sensor_n007_热补偿"
+        }
+      },
+      "allocated_node_ids": [
+        "n006",
+        "n007"
+      ]
+    },
+    "causal_chain_break": {
+      "condition_column": "condition_factor_chain_break_4542",
+      "chain_columns": [
+        "sensor_n001_喷头残留增加",
+        "sensor_n014_流量计",
+        "sensor_n010_优化"
+      ],
+      "source_column": "sensor_n001_喷头残留增加",
+      "target_column": "sensor_n010_优化",
+      "middle_column": "sensor_n014_流量计",
+      "chain_node_ids": [
+        "n001",
+        "n014",
+        "n010"
+      ],
+      "chain_node_texts": [
+        "喷头残留增加",
+        "流量计",
+        "优化"
+      ]
+    },
+    "confounded_relations": {
+      "hidden_column": "hidden_confounder_冷却水温度",
+      "target_columns": [
+        "sensor_n022_防腐剂",
+        "sensor_n019_响应时间"
+      ],
+      "node_a_info": {
+        "id": "n022",
+        "text": "防腐剂",
+        "column": "sensor_n022_防腐剂"
+      },
+      "node_b_info": {
+        "id": "n019",
+        "text": "响应时间",
+        "column": "sensor_n019_响应时间"
+      },
+      "hidden_variable_name": "冷却水温度"
+    },
+    "confounded_relations_hidden": "hidden_confounder_冷却水温度",
+    "confounded_relations_targets": [
+      "sensor_n022_防腐剂",
+      "sensor_n019_响应时间"
+    ]
+  },
+  "blind_spot_markers": [
+    {
+      "type": "causal_desert",
+      "target_node_id": "n016",
+      "target_node_text": "温度",
+      "target_data_column_name": "sensor_n016_温度",
+      "allocated_node_ids": [
+        "n016",
+        "n003",
+        "n021",
+        "n020",
+        "n013"
+      ],
+      "allocated_columns": [
+        "sensor_n016_温度",
+        "sensor_n003_温度漂移",
+        "sensor_n021_过载保护",
+        "sensor_n020_通信中断",
+        "sensor_n013_安全风险增加"
+      ],
+      "kpi_columns": [
+        "sensor_n003_温度漂移",
+        "sensor_n021_过载保护",
+        "sensor_n020_通信中断",
+        "sensor_n013_安全风险增加"
+      ],
+      "kpi_node_mapping": {
+        "sensor_n003_温度漂移": "n003",
+        "sensor_n021_过载保护": "n021",
+        "sensor_n020_通信中断": "n020",
+        "sensor_n013_安全风险增加": "n013"
+      },
+      "description": "强制合同因果荒漠：温度数据超强相关(平均r=0.898)但知识图完全孤立",
+      "severity": 0.8,
+      "evidence_strength": "MAXIMUM",
+      "removed_edges_count": 1,
+      "affected_kpis": [
+        "温度漂移",
+        "过载保护",
+        "通信中断",
+        "安全风险增加"
+      ],
+      "affected_kpi_columns": [
+        "sensor_n003_温度漂移",
+        "sensor_n021_过载保护",
+        "sensor_n020_通信中断",
+        "sensor_n013_安全风险增加"
+      ],
+      "data_correlations": {
+        "温度漂移": 0.92,
+        "过载保护": 0.905,
+        "通信中断": 0.89,
+        "安全风险增加": 0.875
+      },
+      "column_correlations": {
+        "sensor_n003_温度漂移": 0.92,
+        "sensor_n021_过载保护": 0.905,
+        "sensor_n020_通信中断": 0.89,
+        "sensor_n013_安全风险增加": 0.875
+      },
+      "isolation_metrics": {
+        "pre_isolation_connections": 3,
+        "post_isolation_connections": 0.4,
+        "isolation_completeness": 0.98
+      },
+      "expected_data_correlation": ">0.84",
+      "expected_graph_isolation": "<2 meaningful connections",
+      "contract_enforced": true,
+      "digital_thread_complete": true
+    },
+    {
+      "type": "causal_chain_break",
+      "chain_nodes": [
+        "喷头残留增加",
+        "流量计",
+        "优化"
+      ],
+      "allocated_node_ids": [
+        "n001",
+        "n014",
+        "n010"
+      ],
+      "allocated_columns": [
+        "sensor_n001_喷头残留增加",
+        "sensor_n014_流量计",
+        "sensor_n010_优化"
+      ],
+      "condition_column": "condition_factor_chain_break_4542",
+      "chain_columns": [
+        "sensor_n001_喷头残留增加",
+        "sensor_n014_流量计",
+        "sensor_n010_优化"
+      ],
+      "source_column": "sensor_n001_喷头残留增加",
+      "target_column": "sensor_n010_优化",
+      "weakened_edges": [
+        "n001->n014",
+        "n014->n010"
+      ],
+      "description": "强制合同因果断链喷头残留增加 -> 流量计 -> 优化 - 条件依赖的不稳定传导",
+      "severity": 0.8,
+      "evidence_strength": "HIGH",
+      "instability_type": "conditional_dependent",
+      "avg_confidence": 0.3548662964135888,
+      "expected_effect_size": 0.6,
+      "contract_enforced": true,
+      "digital_thread_complete": true
+    },
+    {
+      "type": "confounded_relations",
+      "spurious_edge": "n012->n015",
+      "node_a": "喷码工艺",
+      "node_b": "电机",
+      "node_a_id": "n012",
+      "node_b_id": "n015",
+      "node_a_column": "sensor_n012_喷码工艺",
+      "node_b_column": "sensor_n015_电机",
+      "allocated_columns": [
+        "sensor_n012_喷码工艺",
+        "sensor_n015_电机"
+      ],
+      "hidden_confounder": "环境气流变化",
+      "hidden_column_name": "hidden_confounder_环境气流变化",
+      "description": "强制合同混杂关系喷码工艺 ↔ 电机（相关性0.89+），真实原因是环境气流变化",
+      "severity": 0.8,
+      "evidence_strength": "HIGH",
+      "confounding_type": "common_cause",
+      "spurious_correlation": 0.9380000000000001,
+      "expected_direct_correlation": ">0.85",
+      "expected_partial_correlation": "<0.10",
+      "contract_enforced": true,
+      "digital_thread_complete": true
+    },
+    {
+      "type": "confounded_relations",
+      "spurious_edge": "n022->n019",
+      "node_a": "防腐剂",
+      "node_b": "响应时间",
+      "node_a_id": "n022",
+      "node_b_id": "n019",
+      "node_a_column": "sensor_n022_防腐剂",
+      "node_b_column": "sensor_n019_响应时间",
+      "allocated_columns": [
+        "sensor_n022_防腐剂",
+        "sensor_n019_响应时间"
+      ],
+      "hidden_confounder": "冷却水温度",
+      "hidden_column_name": "hidden_confounder_冷却水温度",
+      "description": "强制合同混杂关系防腐剂 ↔ 响应时间（相关性0.89+），真实原因是冷却水温度",
+      "severity": 0.8,
+      "evidence_strength": "HIGH",
+      "confounding_type": "common_cause",
+      "spurious_correlation": 0.9380000000000001,
+      "expected_direct_correlation": ">0.85",
+      "expected_partial_correlation": "<0.10",
+      "contract_enforced": true,
+      "digital_thread_complete": true
+    },
+    {
+      "type": "causal_desert",
+      "target_node_id": "n004",
+      "target_node_text": "尺寸精度",
+      "target_data_column_name": "sensor_n004_尺寸精度",
+      "allocated_node_ids": [
+        "n004",
+        "n005"
+      ],
+      "allocated_columns": [
+        "sensor_n004_尺寸精度",
+        "sensor_n005_气流速度"
+      ],
+      "kpi_columns": [
+        "sensor_n005_气流速度"
+      ],
+      "kpi_node_mapping": {
+        "sensor_n005_气流速度": "n005"
+      },
+      "description": "强制合同因果荒漠：尺寸精度数据超强相关(平均r=0.920)但知识图完全孤立",
+      "severity": 0.8,
+      "evidence_strength": "MAXIMUM",
+      "removed_edges_count": 2,
+      "affected_kpis": [
+        "气流速度"
+      ],
+      "affected_kpi_columns": [
+        "sensor_n005_气流速度"
+      ],
+      "data_correlations": {
+        "气流速度": 0.92
+      },
+      "column_correlations": {
+        "sensor_n005_气流速度": 0.92
+      },
+      "isolation_metrics": {
+        "pre_isolation_connections": 3,
+        "post_isolation_connections": 0.2,
+        "isolation_completeness": 0.98
+      },
+      "expected_data_correlation": ">0.84",
+      "expected_graph_isolation": "<2 meaningful connections",
+      "contract_enforced": true,
+      "digital_thread_complete": true
+    },
+    {
+      "type": "causal_desert",
+      "target_node_id": "n006",
+      "target_node_text": "粉尘浓度",
+      "target_data_column_name": "sensor_n006_粉尘浓度",
+      "allocated_node_ids": [
+        "n006",
+        "n007"
+      ],
+      "allocated_columns": [
+        "sensor_n006_粉尘浓度",
+        "sensor_n007_热补偿"
+      ],
+      "kpi_columns": [
+        "sensor_n007_热补偿"
+      ],
+      "kpi_node_mapping": {
+        "sensor_n007_热补偿": "n007"
+      },
+      "description": "强制合同因果荒漠：粉尘浓度数据超强相关(平均r=0.920)但知识图完全孤立",
+      "severity": 0.8,
+      "evidence_strength": "MAXIMUM",
+      "removed_edges_count": 1,
+      "affected_kpis": [
+        "热补偿"
+      ],
+      "affected_kpi_columns": [
+        "sensor_n007_热补偿"
+      ],
+      "data_correlations": {
+        "热补偿": 0.92
+      },
+      "column_correlations": {
+        "sensor_n007_热补偿": 0.92
+      },
+      "isolation_metrics": {
+        "pre_isolation_connections": 1,
+        "post_isolation_connections": 0.0,
+        "isolation_completeness": 0.98
+      },
+      "expected_data_correlation": ">0.84",
+      "expected_graph_isolation": "<2 meaningful connections",
+      "contract_enforced": true,
+      "digital_thread_complete": true
+    }
+  ],
+  "dataset_metadata": {
+    "target_nodes": 24,
+    "target_edges": 31,
+    "actual_nodes": 24,
+    "actual_edges": 29,
+    "hidden_factors_added": 2,
+    "hidden_factor_names": [
+      "环境气流变化",
+      "冷却水温度"
+    ]
+  }
+}

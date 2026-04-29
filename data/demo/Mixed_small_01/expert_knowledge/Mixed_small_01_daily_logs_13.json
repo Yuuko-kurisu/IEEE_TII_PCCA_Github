@@ -1,0 +1,15 @@
+{
+  "id": "Mixed_small_01_daily_logs_13",
+  "type": "daily_log",
+  "expert_profile": "domain_expert",
+  "timestamp": "2025-06-30T16:07:30.237534",
+  "content": "早上检查发现参数异常，可能是环境变化。",
+  "scenario_context": "热胀冷缩控制",
+  "confidence": 0.8266392949094242,
+  "keywords": [
+    "检查",
+    "异常"
+  ],
+  "blind_spot_related": null,
+  "evidence_strength": "NONE"
+}

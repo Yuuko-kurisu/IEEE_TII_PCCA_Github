@@ -1,0 +1,173 @@
+{
+  "case_id": "Mixed_small_01",
+  "evaluation_metrics": {
+    "total_blind_spots": 6,
+    "blind_spot_distribution": {
+      "causal_desert": 3,
+      "causal_chain_break": 1,
+      "confounded_relations": 2
+    },
+    "detection_difficulty": {
+      "easy": 0,
+      "medium": 0,
+      "hard": 6
+    }
+  },
+  "ground_truth_targets": [
+    {
+      "blind_spot_type": "causal_desert",
+      "description": "盲区类型: causal_desert",
+      "severity": 0.8,
+      "target_nodes": [
+        "温度"
+      ],
+      "expected_findings": {
+        "type": "MISSING_CAUSAL_CONNECTIONS",
+        "isolated_node": "温度",
+        "missing_edges": [
+          {
+            "source_id": "n016",
+            "target_id": "n012"
+          }
+        ],
+        "data_correlations": {
+          "温度漂移": 0.92,
+          "过载保护": 0.905,
+          "通信中断": 0.89,
+          "安全风险增加": 0.875
+        },
+        "detection_method": "Find nodes with high data correlation (>0.7) but low graph connectivity (<2 edges)"
+      }
+    },
+    {
+      "blind_spot_type": "causal_chain_break",
+      "description": "盲区类型: causal_chain_break",
+      "severity": 0.8,
+      "target_nodes": [
+        "喷头残留增加",
+        "流量计",
+        "优化"
+      ],
+      "expected_findings": {
+        "type": "UNSTABLE_CAUSAL_CHAIN",
+        "chain_nodes": [
+          "喷头残留增加",
+          "流量计",
+          "优化"
+        ],
+        "instability_indicators": {
+          "low_confidence_edges": "Average confidence < 0.5",
+          "conditional_dependency": "Transmission success rate 20%-70%",
+          "environmental_sensitivity": "Performance varies with conditions"
+        },
+        "detection_method": "Find causal chains with low confidence and unstable data transmission"
+      }
+    },
+    {
+      "blind_spot_type": "confounded_relations",
+      "description": "盲区类型: confounded_relations",
+      "severity": 0.8,
+      "target_nodes": [
+        "喷码工艺",
+        "电机"
+      ],
+      "expected_findings": {
+        "type": "SPURIOUS_CORRELATION",
+        "spurious_relation": {
+          "source_node": "喷码工艺",
+          "target_node": "电机"
+        },
+        "hidden_confounder": "环境气流变化",
+        "correlation_analysis": {
+          "observed_correlation": ">0.85",
+          "partial_correlation_controlled": "<0.2",
+          "simpson_paradox": true
+        },
+        "detection_method": "Find high correlations that disappear when controlling for hidden variables"
+      }
+    },
+    {
+      "blind_spot_type": "confounded_relations",
+      "description": "盲区类型: confounded_relations",
+      "severity": 0.8,
+      "target_nodes": [
+        "防腐剂",
+        "响应时间"
+      ],
+      "expected_findings": {
+        "type": "SPURIOUS_CORRELATION",
+        "spurious_relation": {
+          "source_node": "防腐剂",
+          "target_node": "响应时间"
+        },
+        "hidden_confounder": "冷却水温度",
+        "correlation_analysis": {
+          "observed_correlation": ">0.85",
+          "partial_correlation_controlled": "<0.2",
+          "simpson_paradox": true
+        },
+        "detection_method": "Find high correlations that disappear when controlling for hidden variables"
+      }
+    },
+    {
+      "blind_spot_type": "causal_desert",
+      "description": "盲区类型: causal_desert",
+      "severity": 0.8,
+      "target_nodes": [
+        "尺寸精度"
+      ],
+      "expected_findings": {
+        "type": "MISSING_CAUSAL_CONNECTIONS",
+        "isolated_node": "尺寸精度",
+        "missing_edges": [
+          {
+            "source_id": "n004",
+            "target_id": "n024"
+          },
+          {
+            "source_id": "n004",
+            "target_id": "n008"
+          }
+        ],
+        "data_correlations": {
+          "气流速度": 0.92
+        },
+        "detection_method": "Find nodes with high data correlation (>0.7) but low graph connectivity (<2 edges)"
+      }
+    },
+    {
+      "blind_spot_type": "causal_desert",
+      "description": "盲区类型: causal_desert",
+      "severity": 0.8,
+      "target_nodes": [
+        "粉尘浓度"
+      ],
+      "expected_findings": {
+        "type": "MISSING_CAUSAL_CONNECTIONS",
+        "isolated_node": "粉尘浓度",
+        "missing_edges": [
+          {
+            "source_id": "n006",
+            "target_id": "n014"
+          }
+        ],
+        "data_correlations": {
+          "热补偿": 0.92
+        },
+        "detection_method": "Find nodes with high data correlation (>0.7) but low graph connectivity (<2 edges)"
+      }
+    }
+  ],
+  "validation_instructions": {
+    "causal_desert": "寻找数据强相关但图结构孤立的节点",
+    "causal_chain_break": "寻找置信度低且传导不稳定的因果链",
+    "confounded_relations": "寻找受隐藏变量影响的虚假关联",
+    "tacit_knowledge_gaps": "寻找专家复杂策略与系统简单规则的差异"
+  },
+  "dataset_metadata": {
+    "method_type": "Mixed",
+    "graph_scale": "small",
+    "scenario": "vibration_alignment_drift",
+    "prepared_at": "2025-08-18T16:07:30.394945"
+  }
+}

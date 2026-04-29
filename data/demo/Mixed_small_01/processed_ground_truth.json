@@ -1,0 +1,1016 @@
+{
+  "case_id": "Mixed_small_01",
+  "evaluation_metrics": {
+    "total_blind_spots": 6,
+    "blind_spot_distribution": {
+      "causal_desert": 3,
+      "causal_chain_break": 1,
+      "confounded_relations": 2
+    },
+    "detection_difficulty": {
+      "easy": 0,
+      "medium": 0,
+      "hard": 6
+    }
+  },
+  "original_ground_truth_targets": [
+    {
+      "blind_spot_type": "causal_desert",
+      "description": "盲区类型: causal_desert",
+      "severity": 0.8,
+      "target_nodes": [
+        "温度"
+      ],
+      "expected_findings": {
+        "type": "MISSING_CAUSAL_CONNECTIONS",
+        "isolated_node": "温度",
+        "missing_edges": [
+          {
+            "source_id": "n016",
+            "target_id": "n012"
+          }
+        ],
+        "data_correlations": {
+          "温度漂移": 0.92,
+          "过载保护": 0.905,
+          "通信中断": 0.89,
+          "安全风险增加": 0.875
+        },
+        "detection_method": "Find nodes with high data correlation (>0.7) but low graph connectivity (<2 edges)"
+      }
+    },
+    {
+      "blind_spot_type": "causal_chain_break",
+      "description": "盲区类型: causal_chain_break",
+      "severity": 0.8,
+      "target_nodes": [
+        "喷头残留增加",
+        "流量计",
+        "优化"
+      ],
+      "expected_findings": {
+        "type": "UNSTABLE_CAUSAL_CHAIN",
+        "chain_nodes": [
+          "喷头残留增加",
+          "流量计",
+          "优化"
+        ],
+        "instability_indicators": {
+          "low_confidence_edges": "Average confidence < 0.5",
+          "conditional_dependency": "Transmission success rate 20%-70%",
+          "environmental_sensitivity": "Performance varies with conditions"
+        },
+        "detection_method": "Find causal chains with low confidence and unstable data transmission"
+      }
+    },
+    {
+      "blind_spot_type": "confounded_relations",
+      "description": "盲区类型: confounded_relations",
+      "severity": 0.8,
+      "target_nodes": [
+        "喷码工艺",
+        "电机"
+      ],
+      "expected_findings": {
+        "type": "SPURIOUS_CORRELATION",
+        "spurious_relation": {
+          "source_node": "喷码工艺",
+          "target_node": "电机"
+        },
+        "hidden_confounder": "环境气流变化",
+        "correlation_analysis": {
+          "observed_correlation": ">0.85",
+          "partial_correlation_controlled": "<0.2",
+          "simpson_paradox": true
+        },
+        "detection_method": "Find high correlations that disappear when controlling for hidden variables"
+      }
+    },
+    {
+      "blind_spot_type": "confounded_relations",
+      "description": "盲区类型: confounded_relations",
+      "severity": 0.8,
+      "target_nodes": [
+        "防腐剂",
+        "响应时间"
+      ],
+      "expected_findings": {
+        "type": "SPURIOUS_CORRELATION",
+        "spurious_relation": {
+          "source_node": "防腐剂",
+          "target_node": "响应时间"
+        },
+        "hidden_confounder": "冷却水温度",
+        "correlation_analysis": {
+          "observed_correlation": ">0.85",
+          "partial_correlation_controlled": "<0.2",
+          "simpson_paradox": true
+        },
+        "detection_method": "Find high correlations that disappear when controlling for hidden variables"
+      }
+    },
+    {
+      "blind_spot_type": "causal_desert",
+      "description": "盲区类型: causal_desert",
+      "severity": 0.8,
+      "target_nodes": [
+        "尺寸精度"
+      ],
+      "expected_findings": {
+        "type": "MISSING_CAUSAL_CONNECTIONS",
+        "isolated_node": "尺寸精度",
+        "missing_edges": [
+          {
+            "source_id": "n004",
+            "target_id": "n024"
+          },
+          {
+            "source_id": "n004",
+            "target_id": "n008"
+          }
+        ],
+        "data_correlations": {
+          "气流速度": 0.92
+        },
+        "detection_method": "Find nodes with high data correlation (>0.7) but low graph connectivity (<2 edges)"
+      }
+    },
+    {
+      "blind_spot_type": "causal_desert",
+      "description": "盲区类型: causal_desert",
+      "severity": 0.8,
+      "target_nodes": [
+        "粉尘浓度"
+      ],
+      "expected_findings": {
+        "type": "MISSING_CAUSAL_CONNECTIONS",
+        "isolated_node": "粉尘浓度",
+        "missing_edges": [
+          {
+            "source_id": "n006",
+            "target_id": "n014"
+          }
+        ],
+        "data_correlations": {
+          "热补偿": 0.92
+        },
+        "detection_method": "Find nodes with high data correlation (>0.7) but low graph connectivity (<2 edges)"
+      }
+    }
+  ],
+  "evidence_zones": {
+    "evidence_zone_0": {
+      "zone_id": "evidence_zone_0",
+      "blind_spot_type": "causal_desert",
+      "description": "盲区类型: causal_desert",
+      "severity": 0.8,
+      "target_nodes": [
+        "温度"
+      ],
+      "evidence_edges": [
+        {
+          "edge_key": "温度 -> 喷码工艺",
+          "edge_type": "missing_edge",
+          "expected_change": "increase",
+          "importance": "high",
+          "reason": "荒漠节点温度的缺失连接"
+        },
+        {
+          "edge_key": "温度 -> 温度漂移",
+          "edge_type": "missing_edge",
+          "expected_change": "increase",
+          "importance": "high",
+          "reason": "强数据相关性(0.92)但图结构缺失"
+        },
+        {
+          "edge_key": "温度 -> 过载保护",
+          "edge_type": "missing_edge",
+          "expected_change": "increase",
+          "importance": "high",
+          "reason": "强数据相关性(0.91)但图结构缺失"
+        },
+        {
+          "edge_key": "温度 -> 通信中断",
+          "edge_type": "missing_edge",
+          "expected_change": "increase",
+          "importance": "high",
+          "reason": "强数据相关性(0.89)但图结构缺失"
+        },
+        {
+          "edge_key": "温度 -> 安全风险增加",
+          "edge_type": "missing_edge",
+          "expected_change": "increase",
+          "importance": "high",
+          "reason": "强数据相关性(0.88)但图结构缺失"
+        }
+      ],
+      "target_regions": {
+        "desert_center": [
+          "温度"
+        ],
+        "missing_connections_region": [
+          "温度 -> 喷码工艺",
+          "温度 -> 温度漂移",
+          "温度 -> 过载保护",
+          "温度 -> 通信中断",
+          "温度 -> 安全风险增加"
+        ]
+      },
+      "detection_criteria": {
+        "data_correlation_threshold": 0.7,
+        "graph_connectivity_threshold": 2,
+        "isolation_indicator": "low_degree_high_correlation",
+        "expected_evidence_count": 5,
+        "min_evidence_for_detection": 2
+      }
+    },
+    "evidence_zone_1": {
+      "zone_id": "evidence_zone_1",
+      "blind_spot_type": "causal_chain_break",
+      "description": "盲区类型: causal_chain_break",
+      "severity": 0.8,
+      "target_nodes": [
+        "喷头残留增加",
+        "流量计",
+        "优化"
+      ],
+      "evidence_edges": [
+        {
+          "edge_key": "喷头残留增加 -> 流量计",
+          "edge_type": "wrong_edge",
+          "expected_change": "decrease",
+          "importance": "high",
+          "reason": "因果链喷头残留增加->流量计传导不稳定"
+        },
+        {
+          "edge_key": "流量计 -> 优化",
+          "edge_type": "wrong_edge",
+          "expected_change": "decrease",
+          "importance": "high",
+          "reason": "因果链流量计->优化传导不稳定"
+        }
+      ],
+      "target_regions": {
+        "unstable_chain_region": [
+          "喷头残留增加 -> 流量计",
+          "流量计 -> 优化"
+        ]
+      },
+      "detection_criteria": {
+        "low_confidence_threshold": 0.5,
+        "instability_indicator": "conditional_dependency",
+        "success_rate_range": [
+          0.2,
+          0.7
+        ],
+        "expected_evidence_count": 2,
+        "min_evidence_for_detection": 1
+      }
+    },
+    "evidence_zone_2": {
+      "zone_id": "evidence_zone_2",
+      "blind_spot_type": "confounded_relations",
+      "description": "盲区类型: confounded_relations",
+      "severity": 0.8,
+      "target_nodes": [
+        "喷码工艺",
+        "电机"
+      ],
+      "evidence_edges": [
+        {
+          "edge_key": "喷码工艺 -> 电机",
+          "edge_type": "wrong_edge",
+          "expected_change": "decrease",
+          "importance": "high",
+          "reason": "虚假关联：受环境气流变化混杂"
+        },
+        {
+          "edge_key": "环境气流变化 -> 喷码工艺",
+          "edge_type": "missing_edge",
+          "expected_change": "increase",
+          "importance": "high",
+          "reason": "混杂因子环境气流变化对喷码工艺的真实影响"
+        },
+        {
+          "edge_key": "环境气流变化 -> 电机",
+          "edge_type": "missing_edge",
+          "expected_change": "increase",
+          "importance": "high",
+          "reason": "混杂因子环境气流变化对电机的真实影响"
+        }
+      ],
+      "target_regions": {
+        "spurious_edge_region": [
+          "喷码工艺 -> 电机"
+        ],
+        "confounder_region": [
+          "环境气流变化 -> 喷码工艺",
+          "环境气流变化 -> 电机"
+        ]
+      },
+      "detection_criteria": {
+        "spurious_correlation_threshold": 0.85,
+        "partial_correlation_threshold": 0.2,
+        "simpson_paradox_indicator": true,
+        "expected_evidence_count": 3,
+        "min_evidence_for_detection": 2
+      }
+    },
+    "evidence_zone_3": {
+      "zone_id": "evidence_zone_3",
+      "blind_spot_type": "confounded_relations",
+      "description": "盲区类型: confounded_relations",
+      "severity": 0.8,
+      "target_nodes": [
+        "防腐剂",
+        "响应时间"
+      ],
+      "evidence_edges": [
+        {
+          "edge_key": "防腐剂 -> 响应时间",
+          "edge_type": "wrong_edge",
+          "expected_change": "decrease",
+          "importance": "high",
+          "reason": "虚假关联：受冷却水温度混杂"
+        },
+        {
+          "edge_key": "冷却水温度 -> 防腐剂",
+          "edge_type": "missing_edge",
+          "expected_change": "increase",
+          "importance": "high",
+          "reason": "混杂因子冷却水温度对防腐剂的真实影响"
+        },
+        {
+          "edge_key": "冷却水温度 -> 响应时间",
+          "edge_type": "missing_edge",
+          "expected_change": "increase",
+          "importance": "high",
+          "reason": "混杂因子冷却水温度对响应时间的真实影响"
+        }
+      ],
+      "target_regions": {
+        "spurious_edge_region": [
+          "防腐剂 -> 响应时间"
+        ],
+        "confounder_region": [
+          "冷却水温度 -> 防腐剂",
+          "冷却水温度 -> 响应时间"
+        ]
+      },
+      "detection_criteria": {
+        "spurious_correlation_threshold": 0.85,
+        "partial_correlation_threshold": 0.2,
+        "simpson_paradox_indicator": true,
+        "expected_evidence_count": 3,
+        "min_evidence_for_detection": 2
+      }
+    },
+    "evidence_zone_4": {
+      "zone_id": "evidence_zone_4",
+      "blind_spot_type": "causal_desert",
+      "description": "盲区类型: causal_desert",
+      "severity": 0.8,
+      "target_nodes": [
+        "尺寸精度"
+      ],
+      "evidence_edges": [
+        {
+          "edge_key": "尺寸精度 -> 涂层",
+          "edge_type": "missing_edge",
+          "expected_change": "increase",
+          "importance": "high",
+          "reason": "荒漠节点尺寸精度的缺失连接"
+        },
+        {
+          "edge_key": "尺寸精度 -> 维护",
+          "edge_type": "missing_edge",
+          "expected_change": "increase",
+          "importance": "high",
+          "reason": "荒漠节点尺寸精度的缺失连接"
+        },
+        {
+          "edge_key": "尺寸精度 -> 气流速度",
+          "edge_type": "missing_edge",
+          "expected_change": "increase",
+          "importance": "high",
+          "reason": "强数据相关性(0.92)但图结构缺失"
+        }
+      ],
+      "target_regions": {
+        "desert_center": [
+          "尺寸精度"
+        ],
+        "missing_connections_region": [
+          "尺寸精度 -> 涂层",
+          "尺寸精度 -> 维护",
+          "尺寸精度 -> 气流速度"
+        ]
+      },
+      "detection_criteria": {
+        "data_correlation_threshold": 0.7,
+        "graph_connectivity_threshold": 2,
+        "isolation_indicator": "low_degree_high_correlation",
+        "expected_evidence_count": 3,
+        "min_evidence_for_detection": 1
+      }
+    },
+    "evidence_zone_5": {
+      "zone_id": "evidence_zone_5",
+      "blind_spot_type": "causal_desert",
+      "description": "盲区类型: causal_desert",
+      "severity": 0.8,
+      "target_nodes": [
+        "粉尘浓度"
+      ],
+      "evidence_edges": [
+        {
+          "edge_key": "粉尘浓度 -> 流量计",
+          "edge_type": "missing_edge",
+          "expected_change": "increase",
+          "importance": "high",
+          "reason": "荒漠节点粉尘浓度的缺失连接"
+        },
+        {
+          "edge_key": "粉尘浓度 -> 热补偿",
+          "edge_type": "missing_edge",
+          "expected_change": "increase",
+          "importance": "high",
+          "reason": "强数据相关性(0.92)但图结构缺失"
+        }
+      ],
+      "target_regions": {
+        "desert_center": [
+          "粉尘浓度"
+        ],
+        "missing_connections_region": [
+          "粉尘浓度 -> 流量计",
+          "粉尘浓度 -> 热补偿"
+        ]
+      },
+      "detection_criteria": {
+        "data_correlation_threshold": 0.7,
+        "graph_connectivity_threshold": 2,
+        "isolation_indicator": "low_degree_high_correlation",
+        "expected_evidence_count": 2,
+        "min_evidence_for_detection": 1
+      }
+    }
+  },
+  "processed_targets": [
+    {
+      "original_target": {
+        "blind_spot_type": "causal_desert",
+        "description": "盲区类型: causal_desert",
+        "severity": 0.8,
+        "target_nodes": [
+          "温度"
+        ],
+        "expected_findings": {
+          "type": "MISSING_CAUSAL_CONNECTIONS",
+          "isolated_node": "温度",
+          "missing_edges": [
+            {
+              "source_id": "n016",
+              "target_id": "n012"
+            }
+          ],
+          "data_correlations": {
+            "温度漂移": 0.92,
+            "过载保护": 0.905,
+            "通信中断": 0.89,
+            "安全风险增加": 0.875
+          },
+          "detection_method": "Find nodes with high data correlation (>0.7) but low graph connectivity (<2 edges)"
+        }
+      },
+      "evidence_zone_id": "evidence_zone_0",
+      "evidence_zone": {
+        "zone_id": "evidence_zone_0",
+        "blind_spot_type": "causal_desert",
+        "description": "盲区类型: causal_desert",
+        "severity": 0.8,
+        "target_nodes": [
+          "温度"
+        ],
+        "evidence_edges": [
+          {
+            "edge_key": "温度 -> 喷码工艺",
+            "edge_type": "missing_edge",
+            "expected_change": "increase",
+            "importance": "high",
+            "reason": "荒漠节点温度的缺失连接"
+          },
+          {
+            "edge_key": "温度 -> 温度漂移",
+            "edge_type": "missing_edge",
+            "expected_change": "increase",
+            "importance": "high",
+            "reason": "强数据相关性(0.92)但图结构缺失"
+          },
+          {
+            "edge_key": "温度 -> 过载保护",
+            "edge_type": "missing_edge",
+            "expected_change": "increase",
+            "importance": "high",
+            "reason": "强数据相关性(0.91)但图结构缺失"
+          },
+          {
+            "edge_key": "温度 -> 通信中断",
+            "edge_type": "missing_edge",
+            "expected_change": "increase",
+            "importance": "high",
+            "reason": "强数据相关性(0.89)但图结构缺失"
+          },
+          {
+            "edge_key": "温度 -> 安全风险增加",
+            "edge_type": "missing_edge",
+            "expected_change": "increase",
+            "importance": "high",
+            "reason": "强数据相关性(0.88)但图结构缺失"
+          }
+        ],
+        "target_regions": {
+          "desert_center": [
+            "温度"
+          ],
+          "missing_connections_region": [
+            "温度 -> 喷码工艺",
+            "温度 -> 温度漂移",
+            "温度 -> 过载保护",
+            "温度 -> 通信中断",
+            "温度 -> 安全风险增加"
+          ]
+        },
+        "detection_criteria": {
+          "data_correlation_threshold": 0.7,
+          "graph_connectivity_threshold": 2,
+          "isolation_indicator": "low_degree_high_correlation",
+          "expected_evidence_count": 5,
+          "min_evidence_for_detection": 2
+        }
+      }
+    },
+    {
+      "original_target": {
+        "blind_spot_type": "causal_chain_break",
+        "description": "盲区类型: causal_chain_break",
+        "severity": 0.8,
+        "target_nodes": [
+          "喷头残留增加",
+          "流量计",
+          "优化"
+        ],
+        "expected_findings": {
+          "type": "UNSTABLE_CAUSAL_CHAIN",
+          "chain_nodes": [
+            "喷头残留增加",
+            "流量计",
+            "优化"
+          ],
+          "instability_indicators": {
+            "low_confidence_edges": "Average confidence < 0.5",
+            "conditional_dependency": "Transmission success rate 20%-70%",
+            "environmental_sensitivity": "Performance varies with conditions"
+          },
+          "detection_method": "Find causal chains with low confidence and unstable data transmission"
+        }
+      },
+      "evidence_zone_id": "evidence_zone_1",
+      "evidence_zone": {
+        "zone_id": "evidence_zone_1",
+        "blind_spot_type": "causal_chain_break",
+        "description": "盲区类型: causal_chain_break",
+        "severity": 0.8,
+        "target_nodes": [
+          "喷头残留增加",
+          "流量计",
+          "优化"
+        ],
+        "evidence_edges": [
+          {
+            "edge_key": "喷头残留增加 -> 流量计",
+            "edge_type": "wrong_edge",
+            "expected_change": "decrease",
+            "importance": "high",
+            "reason": "因果链喷头残留增加->流量计传导不稳定"
+          },
+          {
+            "edge_key": "流量计 -> 优化",
+            "edge_type": "wrong_edge",
+            "expected_change": "decrease",
+            "importance": "high",
+            "reason": "因果链流量计->优化传导不稳定"
+          }
+        ],
+        "target_regions": {
+          "unstable_chain_region": [
+            "喷头残留增加 -> 流量计",
+            "流量计 -> 优化"
+          ]
+        },
+        "detection_criteria": {
+          "low_confidence_threshold": 0.5,
+          "instability_indicator": "conditional_dependency",
+          "success_rate_range": [
+            0.2,
+            0.7
+          ],
+          "expected_evidence_count": 2,
+          "min_evidence_for_detection": 1
+        }
+      }
+    },
+    {
+      "original_target": {
+        "blind_spot_type": "confounded_relations",
+        "description": "盲区类型: confounded_relations",
+        "severity": 0.8,
+        "target_nodes": [
+          "喷码工艺",
+          "电机"
+        ],
+        "expected_findings": {
+          "type": "SPURIOUS_CORRELATION",
+          "spurious_relation": {
+            "source_node": "喷码工艺",
+            "target_node": "电机"
+          },
+          "hidden_confounder": "环境气流变化",
+          "correlation_analysis": {
+            "observed_correlation": ">0.85",
+            "partial_correlation_controlled": "<0.2",
+            "simpson_paradox": true
+          },
+          "detection_method": "Find high correlations that disappear when controlling for hidden variables"
+        }
+      },
+      "evidence_zone_id": "evidence_zone_2",
+      "evidence_zone": {
+        "zone_id": "evidence_zone_2",
+        "blind_spot_type": "confounded_relations",
+        "description": "盲区类型: confounded_relations",
+        "severity": 0.8,
+        "target_nodes": [
+          "喷码工艺",
+          "电机"
+        ],
+        "evidence_edges": [
+          {
+            "edge_key": "喷码工艺 -> 电机",
+            "edge_type": "wrong_edge",
+            "expected_change": "decrease",
+            "importance": "high",
+            "reason": "虚假关联：受环境气流变化混杂"
+          },
+          {
+            "edge_key": "环境气流变化 -> 喷码工艺",
+            "edge_type": "missing_edge",
+            "expected_change": "increase",
+            "importance": "high",
+            "reason": "混杂因子环境气流变化对喷码工艺的真实影响"
+          },
+          {
+            "edge_key": "环境气流变化 -> 电机",
+            "edge_type": "missing_edge",
+            "expected_change": "increase",
+            "importance": "high",
+            "reason": "混杂因子环境气流变化对电机的真实影响"
+          }
+        ],
+        "target_regions": {
+          "spurious_edge_region": [
+            "喷码工艺 -> 电机"
+          ],
+          "confounder_region": [
+            "环境气流变化 -> 喷码工艺",
+            "环境气流变化 -> 电机"
+          ]
+        },
+        "detection_criteria": {
+          "spurious_correlation_threshold": 0.85,
+          "partial_correlation_threshold": 0.2,
+          "simpson_paradox_indicator": true,
+          "expected_evidence_count": 3,
+          "min_evidence_for_detection": 2
+        }
+      }
+    },
+    {
+      "original_target": {
+        "blind_spot_type": "confounded_relations",
+        "description": "盲区类型: confounded_relations",
+        "severity": 0.8,
+        "target_nodes": [
+          "防腐剂",
+          "响应时间"
+        ],
+        "expected_findings": {
+          "type": "SPURIOUS_CORRELATION",
+          "spurious_relation": {
+            "source_node": "防腐剂",
+            "target_node": "响应时间"
+          },
+          "hidden_confounder": "冷却水温度",
+          "correlation_analysis": {
+            "observed_correlation": ">0.85",
+            "partial_correlation_controlled": "<0.2",
+            "simpson_paradox": true
+          },
+          "detection_method": "Find high correlations that disappear when controlling for hidden variables"
+        }
+      },
+      "evidence_zone_id": "evidence_zone_3",
+      "evidence_zone": {
+        "zone_id": "evidence_zone_3",
+        "blind_spot_type": "confounded_relations",
+        "description": "盲区类型: confounded_relations",
+        "severity": 0.8,
+        "target_nodes": [
+          "防腐剂",
+          "响应时间"
+        ],
+        "evidence_edges": [
+          {
+            "edge_key": "防腐剂 -> 响应时间",
+            "edge_type": "wrong_edge",
+            "expected_change": "decrease",
+            "importance": "high",
+            "reason": "虚假关联：受冷却水温度混杂"
+          },
+          {
+            "edge_key": "冷却水温度 -> 防腐剂",
+            "edge_type": "missing_edge",
+            "expected_change": "increase",
+            "importance": "high",
+            "reason": "混杂因子冷却水温度对防腐剂的真实影响"
+          },
+          {
+            "edge_key": "冷却水温度 -> 响应时间",
+            "edge_type": "missing_edge",
+            "expected_change": "increase",
+            "importance": "high",
+            "reason": "混杂因子冷却水温度对响应时间的真实影响"
+          }
+        ],
+        "target_regions": {
+          "spurious_edge_region": [
+            "防腐剂 -> 响应时间"
+          ],
+          "confounder_region": [
+            "冷却水温度 -> 防腐剂",
+            "冷却水温度 -> 响应时间"
+          ]
+        },
+        "detection_criteria": {
+          "spurious_correlation_threshold": 0.85,
+          "partial_correlation_threshold": 0.2,
+          "simpson_paradox_indicator": true,
+          "expected_evidence_count": 3,
+          "min_evidence_for_detection": 2
+        }
+      }
+    },
+    {
+      "original_target": {
+        "blind_spot_type": "causal_desert",
+        "description": "盲区类型: causal_desert",
+        "severity": 0.8,
+        "target_nodes": [
+          "尺寸精度"
+        ],
+        "expected_findings": {
+          "type": "MISSING_CAUSAL_CONNECTIONS",
+          "isolated_node": "尺寸精度",
+          "missing_edges": [
+            {
+              "source_id": "n004",
+              "target_id": "n024"
+            },
+            {
+              "source_id": "n004",
+              "target_id": "n008"
+            }
+          ],
+          "data_correlations": {
+            "气流速度": 0.92
+          },
+          "detection_method": "Find nodes with high data correlation (>0.7) but low graph connectivity (<2 edges)"
+        }
+      },
+      "evidence_zone_id": "evidence_zone_4",
+      "evidence_zone": {
+        "zone_id": "evidence_zone_4",
+        "blind_spot_type": "causal_desert",
+        "description": "盲区类型: causal_desert",
+        "severity": 0.8,
+        "target_nodes": [
+          "尺寸精度"
+        ],
+        "evidence_edges": [
+          {
+            "edge_key": "尺寸精度 -> 涂层",
+            "edge_type": "missing_edge",
+            "expected_change": "increase",
+            "importance": "high",
+            "reason": "荒漠节点尺寸精度的缺失连接"
+          },
+          {
+            "edge_key": "尺寸精度 -> 维护",
+            "edge_type": "missing_edge",
+            "expected_change": "increase",
+            "importance": "high",
+            "reason": "荒漠节点尺寸精度的缺失连接"
+          },
+          {
+            "edge_key": "尺寸精度 -> 气流速度",
+            "edge_type": "missing_edge",
+            "expected_change": "increase",
+            "importance": "high",
+            "reason": "强数据相关性(0.92)但图结构缺失"
+          }
+        ],
+        "target_regions": {
+          "desert_center": [
+            "尺寸精度"
+          ],
+          "missing_connections_region": [
+            "尺寸精度 -> 涂层",
+            "尺寸精度 -> 维护",
+            "尺寸精度 -> 气流速度"
+          ]
+        },
+        "detection_criteria": {
+          "data_correlation_threshold": 0.7,
+          "graph_connectivity_threshold": 2,
+          "isolation_indicator": "low_degree_high_correlation",
+          "expected_evidence_count": 3,
+          "min_evidence_for_detection": 1
+        }
+      }
+    },
+    {
+      "original_target": {
+        "blind_spot_type": "causal_desert",
+        "description": "盲区类型: causal_desert",
+        "severity": 0.8,
+        "target_nodes": [
+          "粉尘浓度"
+        ],
+        "expected_findings": {
+          "type": "MISSING_CAUSAL_CONNECTIONS",
+          "isolated_node": "粉尘浓度",
+          "missing_edges": [
+            {
+              "source_id": "n006",
+              "target_id": "n014"
+            }
+          ],
+          "data_correlations": {
+            "热补偿": 0.92
+          },
+          "detection_method": "Find nodes with high data correlation (>0.7) but low graph connectivity (<2 edges)"
+        }
+      },
+      "evidence_zone_id": "evidence_zone_5",
+      "evidence_zone": {
+        "zone_id": "evidence_zone_5",
+        "blind_spot_type": "causal_desert",
+        "description": "盲区类型: causal_desert",
+        "severity": 0.8,
+        "target_nodes": [
+          "粉尘浓度"
+        ],
+        "evidence_edges": [
+          {
+            "edge_key": "粉尘浓度 -> 流量计",
+            "edge_type": "missing_edge",
+            "expected_change": "increase",
+            "importance": "high",
+            "reason": "荒漠节点粉尘浓度的缺失连接"
+          },
+          {
+            "edge_key": "粉尘浓度 -> 热补偿",
+            "edge_type": "missing_edge",
+            "expected_change": "increase",
+            "importance": "high",
+            "reason": "强数据相关性(0.92)但图结构缺失"
+          }
+        ],
+        "target_regions": {
+          "desert_center": [
+            "粉尘浓度"
+          ],
+          "missing_connections_region": [
+            "粉尘浓度 -> 流量计",
+            "粉尘浓度 -> 热补偿"
+          ]
+        },
+        "detection_criteria": {
+          "data_correlation_threshold": 0.7,
+          "graph_connectivity_threshold": 2,
+          "isolation_indicator": "low_degree_high_correlation",
+          "expected_evidence_count": 2,
+          "min_evidence_for_detection": 1
+        }
+      }
+    }
+  ],
+  "evaluation_config": {
+    "hit_threshold": 2,
+    "evidence_types": [
+      "wrong_edge",
+      "missing_edge"
+    ],
+    "scoring_method": "weighted_evidence",
+    "quality_weights": {
+      "high_confidence_evidence": 1.0,
+      "medium_confidence_evidence": 0.7,
+      "low_confidence_evidence": 0.4
+    }
+  },
+  "validation_guide": {
+    "total_zones": 6,
+    "validation_steps": [
+      "1. 加载BCSA分析结果中的显著证据",
+      "2. 对每个证据区域计算命中率",
+      "3. 判断整体盲区召回率",
+      "4. 生成诊断对比仪表盘"
+    ],
+    "zone_summaries": {
+      "evidence_zone_0": {
+        "type": "causal_desert",
+        "evidence_count": 5,
+        "detection_difficulty": "hard",
+        "key_indicators": [
+          "荒漠节点温度的缺失连接",
+          "强数据相关性(0.92)但图结构缺失",
+          "强数据相关性(0.91)但图结构缺失",
+          "强数据相关性(0.89)但图结构缺失",
+          "强数据相关性(0.88)但图结构缺失"
+        ]
+      },
+      "evidence_zone_1": {
+        "type": "causal_chain_break",
+        "evidence_count": 2,
+        "detection_difficulty": "hard",
+        "key_indicators": [
+          "因果链喷头残留增加->流量计传导不稳定",
+          "因果链流量计->优化传导不稳定"
+        ]
+      },
+      "evidence_zone_2": {
+        "type": "confounded_relations",
+        "evidence_count": 3,
+        "detection_difficulty": "hard",
+        "key_indicators": [
+          "虚假关联：受环境气流变化混杂",
+          "混杂因子环境气流变化对喷码工艺的真实影响",
+          "混杂因子环境气流变化对电机的真实影响"
+        ]
+      },
+      "evidence_zone_3": {
+        "type": "confounded_relations",
+        "evidence_count": 3,
+        "detection_difficulty": "hard",
+        "key_indicators": [
+          "虚假关联：受冷却水温度混杂",
+          "混杂因子冷却水温度对防腐剂的真实影响",
+          "混杂因子冷却水温度对响应时间的真实影响"
+        ]
+      },
+      "evidence_zone_4": {
+        "type": "causal_desert",
+        "evidence_count": 3,
+        "detection_difficulty": "hard",
+        "key_indicators": [
+          "荒漠节点尺寸精度的缺失连接",
+          "荒漠节点尺寸精度的缺失连接",
+          "强数据相关性(0.92)但图结构缺失"
+        ]
+      },
+      "evidence_zone_5": {
+        "type": "causal_desert",
+        "evidence_count": 2,
+        "detection_difficulty": "hard",
+        "key_indicators": [
+          "荒漠节点粉尘浓度的缺失连接",
+          "强数据相关性(0.92)但图结构缺失"
+        ]
+      }
+    }
+  },
+  "processing_metadata": {
+    "processor_version": "v1.0",
+    "processing_timestamp": "2025-10-02T14:00:16.005506",
+    "total_evidence_zones": 6,
+    "total_evidence_edges": 18,
+    "ckg_enhanced_with_hidden_factors": true,
+    "enhanced_ckg_path": "seek_data_v3_deep_enhanced\\cases\\smallcase\\Mixed\\Mixed_small_01\\causal_knowledge_graph.json"
+  },
+  "dataset_metadata": {
+    "method_type": "Mixed",
+    "graph_scale": "small",
+    "scenario": "vibration_alignment_drift",
+    "prepared_at": "2025-08-18T16:07:30.394945"
+  }
+}

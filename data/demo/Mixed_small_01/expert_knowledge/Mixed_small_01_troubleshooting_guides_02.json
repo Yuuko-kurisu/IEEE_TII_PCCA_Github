@@ -1,0 +1,14 @@
+{
+  "id": "Mixed_small_01_troubleshooting_guides_02",
+  "type": "troubleshooting_guide",
+  "expert_profile": "domain_expert",
+  "timestamp": "2025-06-25T16:07:30.237534",
+  "content": "最终解决方案：预测性热补偿。",
+  "scenario_context": "热胀冷缩控制",
+  "confidence": 0.7431801337943802,
+  "keywords": [
+    "热补偿"
+  ],
+  "blind_spot_related": null,
+  "evidence_strength": "NONE"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "Mixed_small_01_daily_logs_01",
+  "type": "daily_log",
+  "expert_profile": "domain_expert",
+  "timestamp": "2025-06-12T16:07:30.236535",
+  "content": "今天湿度66%，比昨天高了不少。",
+  "scenario_context": "热胀冷缩控制",
+  "confidence": 0.9154828387593723,
+  "keywords": [
+    "湿度"
+  ],
+  "blind_spot_related": null,
+  "evidence_strength": "NONE"
+}

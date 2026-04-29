@@ -1,0 +1,14 @@
+{
+  "id": "Mixed_small_01_troubleshooting_guides_05",
+  "type": "troubleshooting_guide",
+  "expert_profile": "domain_expert",
+  "timestamp": "2025-05-20T16:07:30.237534",
+  "content": "尝试了分区域温控，效果明显改善。",
+  "scenario_context": "热胀冷缩控制",
+  "confidence": 0.8189947833168681,
+  "keywords": [
+    "效果"
+  ],
+  "blind_spot_related": null,
+  "evidence_strength": "NONE"
+}

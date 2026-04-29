@@ -1,0 +1,14 @@
+{
+  "id": "Mixed_small_01_maintenance_reports_02",
+  "type": "maintenance_report",
+  "expert_profile": "domain_expert",
+  "timestamp": "2025-07-14T16:07:30.237534",
+  "content": "喷头残留增加到流量计的传导不稳定，因果链时灵时不灵。",
+  "scenario_context": "热胀冷缩控制",
+  "confidence": 0.871747254441879,
+  "keywords": [
+    "因果"
+  ],
+  "blind_spot_related": "causal_chain_break",
+  "evidence_strength": "HIGH"
+}

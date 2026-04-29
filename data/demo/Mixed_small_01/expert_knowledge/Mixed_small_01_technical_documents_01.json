@@ -1,0 +1,12 @@
+{
+  "id": "Mixed_small_01_technical_documents_01",
+  "type": "technical_notes",
+  "expert_profile": "domain_expert",
+  "timestamp": "2025-08-03T16:07:30.239535",
+  "content": "专家记录：针对热胀冷缩控制的technical_notes。",
+  "scenario_context": "热胀冷缩控制",
+  "confidence": 0.9472113751182739,
+  "keywords": [],
+  "blind_spot_related": null,
+  "evidence_strength": "NONE"
+}

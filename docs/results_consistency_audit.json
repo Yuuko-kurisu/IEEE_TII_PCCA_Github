@@ -1,0 +1,30 @@
+{
+  "status": "completed",
+  "dataset_cases_on_disk": 225,
+  "release_notes": [
+    {
+      "type": "valid_artifact_counts",
+      "note": "The n_cases field records the number of valid evaluation artifacts used in each aggregate."
+    },
+    {
+      "type": "paper_table_provenance",
+      "note": "Accepted manuscript tables are kept separate from recomputed helper tables."
+    },
+    {
+      "type": "curated_tables",
+      "note": "Legacy development outputs are excluded from the curated paper tables."
+    },
+    {
+      "type": "standard_deviation_conventions",
+      "note": "The recomputed helper table includes both sample and population standard deviations for auditing accepted manuscript values."
+    },
+    {
+      "type": "evaluation_policy",
+      "note": "The released evaluator defaults to strict evidence matching; legacy semantic compatibility matching requires an explicit switch."
+    },
+    {
+      "type": "strict_recheck",
+      "note": "main_table_medium_strict_recheck.csv applies the released strict evaluator to the same saved medium-scale artifacts as a conservative audit table."
+    }
+  ]
+}

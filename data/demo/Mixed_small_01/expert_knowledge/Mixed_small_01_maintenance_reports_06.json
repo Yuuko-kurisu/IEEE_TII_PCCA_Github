@@ -1,0 +1,14 @@
+{
+  "id": "Mixed_small_01_maintenance_reports_06",
+  "type": "maintenance_report",
+  "expert_profile": "domain_expert",
+  "timestamp": "2025-05-25T16:07:30.237534",
+  "content": "深度清洁粉尘浓度传感器模块后，整体系统性能提升18%，超出预期。数据验证显示粉尘浓度通过多重路径影响系统：直接影响(滞后1小时，强度0.8)、间接影响(滞后3小时，强度0.6)、级联影响(滞后6小时，强度0.4)。但知识图谱未建模任何粉尘浓度的因果输出。认知模型急需更新。",
+  "scenario_context": "热胀冷缩控制",
+  "confidence": 0.8965258901468552,
+  "keywords": [
+    "因果"
+  ],
+  "blind_spot_related": "causal_desert",
+  "evidence_strength": "LOW"
+}

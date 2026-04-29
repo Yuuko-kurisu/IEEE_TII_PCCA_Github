@@ -1,0 +1,17 @@
+{
+  "id": "Mixed_small_01_daily_logs_03",
+  "type": "daily_log",
+  "expert_profile": "domain_expert",
+  "timestamp": "2025-05-21T16:07:30.237534",
+  "content": "Thermal-X机型的尺寸精度总是在高湿度时出问题。",
+  "scenario_context": "热胀冷缩控制",
+  "confidence": 0.7588464167177575,
+  "keywords": [
+    "尺寸精度",
+    "精度",
+    "Thermal-X",
+    "湿度"
+  ],
+  "blind_spot_related": null,
+  "evidence_strength": "NONE"
+}

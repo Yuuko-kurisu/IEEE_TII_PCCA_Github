@@ -1,0 +1,14 @@
+{
+  "id": "Mixed_small_01_technical_documents_03",
+  "type": "technical_notes",
+  "expert_profile": "domain_expert",
+  "timestamp": "2025-08-04T16:07:30.239535",
+  "content": "喷码工艺和电机同步异常，怀疑环境气流变化是真正原因。",
+  "scenario_context": "热胀冷缩控制",
+  "confidence": 0.9498396217497505,
+  "keywords": [
+    "异常"
+  ],
+  "blind_spot_related": "confounded_relations",
+  "evidence_strength": "MEDIUM"
+}

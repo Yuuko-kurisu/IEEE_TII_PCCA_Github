@@ -1,0 +1,16 @@
+{
+  "id": "Mixed_small_01_experience_notes_14",
+  "type": "experience_sharing",
+  "expert_profile": "domain_expert",
+  "timestamp": "2025-08-17T16:07:30.239535",
+  "content": "处理喷头残留增加→流量计这种不稳定因果链时，我的策略是：先验证当前条件下是否存在关联，再决定干预方案。盲目相信因果图会出错。",
+  "scenario_context": "热胀冷缩控制",
+  "confidence": 0.8219103126371676,
+  "keywords": [
+    "条件",
+    "因果",
+    "策略"
+  ],
+  "blind_spot_related": "causal_chain_break",
+  "evidence_strength": "HIGH"
+}

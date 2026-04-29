@@ -1,0 +1,16 @@
+{
+  "id": "Mixed_small_01_troubleshooting_guides_03",
+  "type": "troubleshooting_guide",
+  "expert_profile": "domain_expert",
+  "timestamp": "2025-07-25T16:07:30.237534",
+  "content": "对于Thermal-Y，我通常会先调整参数，观察5分钟后再清洁部件。",
+  "scenario_context": "热胀冷缩控制",
+  "confidence": 0.8484794466842998,
+  "keywords": [
+    "调整",
+    "观察",
+    "Thermal-Y"
+  ],
+  "blind_spot_related": null,
+  "evidence_strength": "NONE"
+}

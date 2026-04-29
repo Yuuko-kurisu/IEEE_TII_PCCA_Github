@@ -1,0 +1,45 @@
+{
+  "total_case_directories": 225,
+  "complete_evaluation_cases": 224,
+  "sensor_only_case_directories": 1,
+  "total_size_mb": 1114.41,
+  "by_scale_type": {
+    "bigcase/BCSA": {
+      "cases": 25,
+      "size_mb": 224.832
+    },
+    "bigcase/CEDA": {
+      "cases": 25,
+      "size_mb": 234.589
+    },
+    "bigcase/Mixed": {
+      "cases": 25,
+      "size_mb": 237.121
+    },
+    "mediumcase/BCSA": {
+      "cases": 25,
+      "size_mb": 103.411
+    },
+    "mediumcase/CEDA": {
+      "cases": 25,
+      "size_mb": 104.927
+    },
+    "mediumcase/Mixed": {
+      "cases": 25,
+      "size_mb": 110.682
+    },
+    "smallcase/BCSA": {
+      "cases": 25,
+      "size_mb": 32.882
+    },
+    "smallcase/CEDA": {
+      "cases": 25,
+      "size_mb": 31.074
+    },
+    "smallcase/Mixed": {
+      "cases": 25,
+      "size_mb": 34.892
+    }
+  },
+  "demo_case": "Mixed_small_01"
+}

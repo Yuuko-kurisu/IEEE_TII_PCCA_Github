@@ -1,0 +1,7 @@
+# technical_notes - 2025-06-27T16:07:30.239535
+
+喷头残留增加到流量计的传导不稳定，因果链时灵时不灵。
+
+--- 专家: domain_expert ---
+--- 盲区相关: causal_chain_break ---
+--- 证据强度: HIGH ---

@@ -1,0 +1,5 @@
+# troubleshooting_guide - 2025-07-25T16:07:30.237534
+
+对于Thermal-Y，我通常会先调整参数，观察5分钟后再清洁部件。
+
+--- 专家: domain_expert ---

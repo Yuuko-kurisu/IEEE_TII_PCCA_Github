@@ -1,0 +1,90 @@
+{
+  "total_documents": 62,
+  "document_types": [
+    "daily_logs",
+    "maintenance_reports",
+    "troubleshooting_guides",
+    "experience_notes",
+    "technical_documents"
+  ],
+  "expert_profile": "domain_expert",
+  "blind_spot_coverage": {
+    "causal_desert": {
+      "total_mentions": 9,
+      "document_types_with_mentions": [
+        {
+          "type": "daily_logs",
+          "mentions": 2
+        },
+        {
+          "type": "maintenance_reports",
+          "mentions": 4
+        },
+        {
+          "type": "experience_notes",
+          "mentions": 2
+        },
+        {
+          "type": "technical_documents",
+          "mentions": 1
+        }
+      ],
+      "evidence_strength_distribution": {
+        "HIGH": 0,
+        "MEDIUM": 0,
+        "LOW": 9,
+        "NONE": 0
+      }
+    },
+    "causal_chain_break": {
+      "total_mentions": 6,
+      "document_types_with_mentions": [
+        {
+          "type": "daily_logs",
+          "mentions": 2
+        },
+        {
+          "type": "maintenance_reports",
+          "mentions": 1
+        },
+        {
+          "type": "experience_notes",
+          "mentions": 2
+        },
+        {
+          "type": "technical_documents",
+          "mentions": 1
+        }
+      ],
+      "evidence_strength_distribution": {
+        "HIGH": 6,
+        "MEDIUM": 0,
+        "LOW": 0,
+        "NONE": 0
+      }
+    },
+    "confounded_relations": {
+      "total_mentions": 4,
+      "document_types_with_mentions": [
+        {
+          "type": "daily_logs",
+          "mentions": 2
+        },
+        {
+          "type": "troubleshooting_guides",
+          "mentions": 1
+        },
+        {
+          "type": "technical_documents",
+          "mentions": 1
+        }
+      ],
+      "evidence_strength_distribution": {
+        "HIGH": 0,
+        "MEDIUM": 4,
+        "LOW": 0,
+        "NONE": 0
+      }
+    }
+  }
+}

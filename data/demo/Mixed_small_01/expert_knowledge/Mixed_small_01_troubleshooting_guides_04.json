@@ -1,0 +1,15 @@
+{
+  "id": "Mixed_small_01_troubleshooting_guides_04",
+  "type": "troubleshooting_guide",
+  "expert_profile": "domain_expert",
+  "timestamp": "2025-05-31T16:07:30.237534",
+  "content": "防腐剂和响应时间同步异常，怀疑冷却水温度是真正原因。",
+  "scenario_context": "热胀冷缩控制",
+  "confidence": 0.8872116464883051,
+  "keywords": [
+    "温度",
+    "异常"
+  ],
+  "blind_spot_related": "confounded_relations",
+  "evidence_strength": "MEDIUM"
+}

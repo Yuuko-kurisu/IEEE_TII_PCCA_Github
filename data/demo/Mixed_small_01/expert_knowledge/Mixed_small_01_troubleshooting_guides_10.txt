@@ -1,0 +1,5 @@
+# troubleshooting_guide - 2025-06-22T16:07:30.238534
+
+最终解决方案：预测性热补偿。
+
+--- 专家: domain_expert ---

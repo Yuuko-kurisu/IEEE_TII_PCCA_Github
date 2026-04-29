@@ -1,0 +1,12 @@
+{
+  "id": "Mixed_small_01_daily_logs_02",
+  "type": "daily_log",
+  "expert_profile": "domain_expert",
+  "timestamp": "2025-07-23T16:07:30.236535",
+  "content": "设备运行23小时后，冷却不足。",
+  "scenario_context": "热胀冷缩控制",
+  "confidence": 0.799094815325056,
+  "keywords": [],
+  "blind_spot_related": null,
+  "evidence_strength": "NONE"
+}

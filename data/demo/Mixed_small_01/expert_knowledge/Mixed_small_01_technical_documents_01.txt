@@ -1,0 +1,5 @@
+# technical_notes - 2025-08-03T16:07:30.239535
+
+专家记录：针对热胀冷缩控制的technical_notes。
+
+--- 专家: domain_expert ---

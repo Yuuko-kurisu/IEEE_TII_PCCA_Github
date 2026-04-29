@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the associated IEEE TII paper."
+title: "PCCA: A Hypothesis-Driven Prompt-Conditioned Causal Auditing Framework for Industrial Knowledge Graphs"
+authors:
+  - family-names: Jiang
+    given-names: Hongwei
+  - family-names: You
+    given-names: Jiapeng
+  - family-names: Shi
+    given-names: Jiayu
+  - family-names: Chen
+    given-names: Zhiyang
+  - family-names: Gou
+    given-names: Huaxing
+  - family-names: Ming
+    given-names: Xinguo
+  - family-names: Sun
+    given-names: Poly Z. H.
+year: 2026
+type: software
+repository-code: "https://github.com/Yuuko-kurisu/IEEE_TII_PCCA_Github"
+

@@ -1,0 +1,19 @@
+{
+  "id": "Mixed_small_01_daily_logs_04",
+  "type": "daily_log",
+  "expert_profile": "domain_expert",
+  "timestamp": "2025-06-12T16:07:30.237534",
+  "content": "今天防腐剂和响应时间又同步异常了，系统说是因果关系，但我检查了冷却水温度，发现有20%的波动。一旦冷却水温度稳定，这种'因果关系'就消失了。典型的混杂效应。",
+  "scenario_context": "热胀冷缩控制",
+  "confidence": 0.7778002336868927,
+  "keywords": [
+    "温度",
+    "检查",
+    "因果",
+    "混杂",
+    "波动",
+    "异常"
+  ],
+  "blind_spot_related": "confounded_relations",
+  "evidence_strength": "MEDIUM"
+}

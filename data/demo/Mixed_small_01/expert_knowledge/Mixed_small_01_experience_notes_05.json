@@ -1,0 +1,15 @@
+{
+  "id": "Mixed_small_01_experience_notes_05",
+  "type": "experience_sharing",
+  "expert_profile": "domain_expert",
+  "timestamp": "2025-05-23T16:07:30.238534",
+  "content": "关于尺寸精度，数据显示强相关但知识图孤立，存在严重认知盲区。",
+  "scenario_context": "热胀冷缩控制",
+  "confidence": 0.8337187938572426,
+  "keywords": [
+    "尺寸精度",
+    "精度"
+  ],
+  "blind_spot_related": "causal_desert",
+  "evidence_strength": "LOW"
+}
