@@ -1,6 +1,6 @@
 # Dataset Description
 
-The benchmark is a curated semi-synthetic industrial causal knowledge graph audit dataset. It is designed to preserve realistic industrial structure while avoiding direct disclosure of private production records.
+The benchmark provides industrial causal knowledge graph audit cases for reproducing and extending the PCCA experiments.
 
 ## Included Data
 
@@ -24,7 +24,7 @@ huggingface-cli download Yukko-kurisu/PCCA pcca_full_benchmark_cases.zip --repo-
 python -m zipfile -e data/pcca_full_benchmark_cases.zip data/full_benchmark
 ```
 
-When extracted, the full dataset contains only the benchmark case tree. Local analysis folders, intermediate experiment workspaces, and development logs are not part of the public dataset archive. The archive is about 520 MB. The case-level manifest in this repository is kept as `benchmark_manifest.csv`.
+When extracted, the full dataset contains the benchmark case tree. The archive is about 520 MB. The case-level manifest in this repository is kept as `benchmark_manifest.csv`.
 
 ## Full Benchmark Scale
 
@@ -57,6 +57,6 @@ Each case may contain:
 - `processed_ground_truth.json`: evaluation-ready evidence zones and target edges
 - `expert_knowledge/`: case documents in text, markdown, and JSON forms
 
-## Privacy and Scope
+## Data Construction and Scope
 
-The released cases are curated semi-synthetic benchmark cases. They do not contain real personal emails, phone numbers, passwords, or raw partner production logs. The dataset is intended for method verification, reproduction of paper tables, and development of industrial CKG audit methods.
+The released cases are curated semi-synthetic benchmark cases designed from industrial causal-audit patterns. The public files are limited to benchmark artifacts required for method verification, reproduction of paper tables, and development of industrial CKG audit methods; they should not be interpreted as direct production logs.

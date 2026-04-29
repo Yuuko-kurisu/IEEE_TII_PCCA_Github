@@ -23,7 +23,7 @@ This dataset accompanies the paper:
 
 > PCCA: A Hypothesis-Driven Prompt-Conditioned Causal Auditing Framework for Industrial Knowledge Graphs
 
-The benchmark contains curated semi-synthetic industrial causal knowledge graph audit cases. It is designed for evaluating methods that identify missing, unreliable, or under-supported causal relationships in industrial causal knowledge graphs.
+The benchmark contains industrial causal knowledge graph audit cases for evaluating methods that identify missing, unreliable, or under-supported causal relationships in industrial causal knowledge graphs.
 
 ## Dataset Summary
 
@@ -61,9 +61,7 @@ data/full_benchmark/
 `-- bigcase/
 ```
 
-The public archive contains the benchmark case tree only. Local analysis folders,
-intermediate experiment workspaces, and development logs are intentionally
-excluded from the dataset release.
+The public archive extracts directly to the benchmark case tree used by the code repository.
 
 ## Case Schema
 
@@ -78,7 +76,7 @@ Each case directory may contain:
 - `processed_ground_truth.json`: evaluation-ready evidence zones and target edges
 - `expert_knowledge/`: expert documents in text, markdown, and JSON forms
 
-The code repository includes `data/benchmark_manifest.csv`, which records case-level file availability. One retained sensor-only directory is marked in the manifest and is excluded by evaluation filters. Evaluation runs should use cases with the required CKG and processed ground-truth files available.
+The code repository includes `data/benchmark_manifest.csv`, which records case-level file availability. Evaluation runs should use cases with the required CKG and processed ground-truth files available.
 
 ## Intended Use
 
@@ -88,9 +86,9 @@ The dataset is intended for:
 - Evaluating industrial causal knowledge graph audit methods
 - Testing graph neural network, causal discovery, and knowledge graph completion baselines on a common benchmark
 
-## Privacy and Provenance
+## Data Construction and Scope
 
-The benchmark is semi-synthetic. It does not contain real personal emails, phone numbers, passwords, or raw partner production logs. The benchmark design is intended to preserve realistic audit patterns without disclosing private operational records.
+The benchmark is released as a curated semi-synthetic dataset designed from industrial causal-audit patterns. The public files are limited to benchmark artifacts required for method verification and academic comparison; they should not be interpreted as direct production logs.
 
 ## Limitations
 
